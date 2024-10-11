@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(Background\ Adocly.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: cover;
+    width: 100%;
+    height: 100%;
+}
+.cadastro{
+    box-shadow: 0 4px 8px 0 black;
+    border: solid 1.4px black;
+    border-radius: 10px;
+    background-color: white;
+    width: 310px;
+    height: 350px;
+    text-align: center;
+    font-family: Merriweather;
+    font-size: 30px;
+    margin-top: 16.5%;
+    margin-left: 42%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+
+}
+.cadastro h2{
+    font-size: 30px;
+    font-family: Merriweather;
+    color: #9B6847;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20px;
+}
+.cadastro h2 img{
+    width: 100px;
+    height: 80px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+.cadastro form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+#email{
+    border: solid 2px #9B6847;
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    margin-right: 4px;
+    outline: none;
+    padding: 2%;
+    color: #9B6847;
+    font-family: Merriweather;
+}
+#email::placeholder{
+    color: #9B6847;
+}
+#senha{
+    border: solid 2px #9B6847;
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    margin-right: 4px;
+    outline: none;
+    padding: 2%;
+    color: #9B6847;
+    font-family: Merriweather;
+}
+#senha::placeholder{
+    color: #9B6847;
+}
+#criar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+    margin-right: 4px;
+    margin-top: 2%;
+    color: white;
+    background-color: #6AB1E4;
+    font-family: Merriweather;
+}
+#criar:hover{
+    color: #9B6847;
+    transition: 0.8s;
+}
+.cadastro input{
+    margin-top: 10px;
+}
+a #voltar{
+    margin-left: 45%;
+}
+#voltar{
+    border: solid 2px #9B6847;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 30px;
+    color: #9B6847;
+    font-family: Merriweather;
+    width: 44%;
+    margin-left: 5px;
+    margin-top: 30px;
+}
+#voltar:hover{
+    background-color: #6AB1E4;
+    transition: 0.8s;
+    color: white;
+    border: none;
+}
+
+@media (min-width: 300px) and (max-width: 1300px){
+    
+    body{
+        background-image: url(Background\ Adocly.png);
+        background-size: cover;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+    }
+    .cadastro{
+        width: 295px;
+        height: 360px;
+        font-size: 30px;
+        margin: auto;
+        padding: 2.8%;
+    
+    }
+    .cadastro h2{
+        font-size: 90%;
+        margin-top: none;
+    }
+    .cadastro h2 img{
+        width: 40%;
+        height: 40%;
+    }
+    h2{
+        margin-right: 10px;
+    }
+    #voltar{
+        font-size: 12px;
+        height: 30px;
+        width: 40%;
+    }
+}

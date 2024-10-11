@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(Tela\ verde.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.navegacao{
+    background-image:url("./Branco2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: solid 2px black;
+    height: 110px;
+}
+.abas{
+    margin-left: 23%;
+    margin-right: 10px;
+    margin-top: -90px;
+}
+#imagem{
+    width: 100px;
+    height: 100px;
+    margin-left: 300px;
+}
+#sobre{
+    background-color: white ;
+    width: 240px;
+    height: 80px;
+    border: none;
+    font-size: 35px;
+    font-family: Merriweather;
+    cursor: pointer;
+}
+#sobre:hover{
+    color: #9B6847;
+    transition: 0.8s;
+}
+#adocao{
+    background-color: white ;
+    width: 240px;
+    height: 80px;
+    margin-left: 80px;
+    border: none;
+    font-size: 35px;
+    font-family: Merriweather;
+    cursor: pointer;
+}
+#adocao:hover{
+    color: #9B6847;
+    transition: 0.8s;
+}
+#clinicas{
+    background-color: white ;
+    width: 240px;
+    height: 80px;
+    margin-left: 80px;
+    border: none;
+    font-size: 35px;
+    font-family: Merriweather;
+    cursor: pointer;
+}
+#clinicas:hover{
+    color: #9B6847;
+    transition: 0.8s;
+}
+#avaliacoes{
+    background-color: white ;
+    width: 240px;
+    height: 80px;
+    margin-left: 80px;
+    border: none;
+    font-size: 35px;
+    font-family: Merriweather;
+    cursor: pointer;
+}
+#avaliacoes:hover{
+    color: #9B6847;
+    transition: 0.8s;
+}
+#btnPerfil{
+    width: 55px;
+    height: 55px;
+    margin-left: 120px;
+    margin-bottom: 50px;
+}
+#imgPerfil{
+    width: 55px;
+    height: 55px;
+    margin-left: 35px;
+}
+.clinicas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    padding: 3%;
+    margin-left: 10px;
+}
+.clinica{
+    width: 550px;
+    height: 400px;
+    background-color: white;
+    border: solid 3px rgb(1, 143, 39);
+    box-shadow: 2px 4px 4px 0px rgb(1, 143, 39);
+    border-radius: 20px;
+    flex-direction: row;
+}
+#img-clinica{
+    width: 280px;
+    height: 397px;
+    display: grid;
+    justify-content: baseline;
+    border: solid 3px rgb(1, 143, 39);
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 20px;
+   
+}
+h2{
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.clinica{
+    display: flex;
+    text-align: center;
+   
+    
+}
