@@ -11,12 +11,14 @@ body{
     background-size: cover;
     width: 100%;
     height: 100%;
+    
 }
 .navegacao{
     background-image:url("./Branco2.png");
     background-repeat: no-repeat;
     background-size: 100%;
     border: solid 2px black;
+    width: 100%;
     height: 110px;
 }
 .abas{
@@ -24,7 +26,7 @@ body{
     margin-right: 10px;
     margin-top: -90px;
 }
-#imagem{
+#imagem-logo{
     width: 100px;
     height: 100px;
     margin-left: 300px;
@@ -93,42 +95,95 @@ body{
 #imgPerfil{
     width: 55px;
     height: 55px;
-    margin-left: 35px;
+    margin-left: 50px;
 }
-.clinicas{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 30px;
-    padding: 3%;
-    margin-left: 10px;
-}
-.clinica{
-    width: 550px;
-    height: 400px;
-    background-color: white;
+.card-endereco{
     border: solid 3px rgb(1, 143, 39);
     box-shadow: 2px 4px 4px 0px rgb(1, 143, 39);
-    border-radius: 20px;
-    flex-direction: row;
-}
-#img-clinica{
-    width: 280px;
-    height: 397px;
-    display: grid;
-    justify-content: baseline;
-    border: solid 3px rgb(1, 143, 39);
-    border-top-left-radius: 17px;
-    border-bottom-left-radius: 20px;
-   
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 6%;
+    margin-left: 23%;
+    width: 1000px;
+    height: 580px;
 }
 h2{
-  margin-top: 20px;
-  margin-left: 30px;
-}
-.clinica{
     display: flex;
+    justify-content: center;
     text-align: center;
-   
-    
+    font-size: 40px;
+    font-family: Merriweather;
+    color: #9B6847;
+    margin-top: 5%;
+}
+.googleMaps{
+    border: solid 2px rgb(1, 143, 39);
+    border-radius: 8px;
+    width: 904px;
+    height: 404px;
+    margin-top: 2%;
+    margin-left: 4.5%;
+}
+#googleMaps{
+    border-radius: 8px;
+    width: 900px;
+    height: 400px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3%;
+    gap: 20px;
+    padding: 2%;
+}
+#cidade{
+    border: solid 2px #9B6847;
+    border-radius: 5px;
+    width: 800px;
+    height: 50px;
+    margin-right: 4px;
+    outline: none;
+    padding: 2%;
+    color: #9B6847;
+    font-family: Merriweather;
+}
+#cidade::placeholder{
+    color: #9B6847;
+    font-size: 16px;
+}
+#bairro{
+    border: solid 2px #9B6847;
+    border-radius: 5px;
+    width: 800px;
+    height: 50px;
+    margin-right: 4px;
+    outline: none;
+    padding: 2%;
+    color: #9B6847;
+    font-family: Merriweather;
+}
+#bairro::placeholder{
+    color: #9B6847;
+    font-size: 16px;
+}
+#procurar-link{
+    text-decoration: none;
+    width: 50%;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    background-color: #6AB1E4;
+    font-family: Merriweather;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+#procurar-link:hover{
+    color: #9B6847;
+    transition: 0.8s; 
 }
