@@ -4,12 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
     <title>Adocly Animais</title>
- 
     <link rel="stylesheet" href="../css/cadastro.css">
-
 </head>
 
 <body>
@@ -21,13 +17,38 @@
             <form action="">
                 <input type="email" name="nome" placeholder="Email:" id="email">
                 <input type="password" name="senha" placeholder="Senha:" id="senha">
-                <a href="./sobre.html" id="criar">Criar conta</a>
+                <input type="submit" href="./sobre.html" placeholder="Criar conta" id="criar">
             </form>
             <a href="../html/login.html"> <input type="submit" value="Voltar" id="voltar"> </a>
         </section>
     </div>
-    <!--<script type="module" src="../js/indexFirebase.js"></script>-->
-    <script  type="module" src="../js/cadastro.js"></script>
+    <script type="module">
+        
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+        import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-database.js";
+      
+        const firebaseConfig = {
+          apiKey: "AIzaSyADjxwj3klBs7JmVYhXiAAXBr0m3D3qOSU",
+          authDomain: "teste-349f7.firebaseapp.com",
+          projectId: "teste-349f7",
+          storageBucket: "teste-349f7.appspot.com",
+          messagingSenderId: "157850767446",
+          appId: "1:157850767446:web:650798ee2761aeca73abf7"
+        };
+      
+      
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app);
+      
+        document.getElementById("criar").addEventListener('click', function(e){
+          e.preventDefault();
+          set(ref(db, 'user/' + document.getElementById("email").value),{
+            email: document.getElementById("email").value,
+            senha: document.getElementById("senha").value
+          });
+          alert("Cadastro feito com sucesso!");
+        });
+          </script>
  
 
 </html>
