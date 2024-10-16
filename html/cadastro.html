@@ -17,7 +17,7 @@
             <form>
                 <input type="email" placeholder="Email:" id="email" required>
                 <input type="password" placeholder="Senha:" id="senha" required>
-                <button id="criar">Criar conta</button>
+                <button id="criar" >Criar conta</button>
             </form>
             <a href="../html/login.html"> <input type="submit" value="Voltar" id="voltar"> </a>
         </section>
@@ -39,33 +39,25 @@
   const app = initializeApp(firebaseConfig);
   const db = getDatabase(app);
       
-  document.addEventListener("DOMContentLoaded", function() {
-            const cadastro = document.getElementById('criar')
-            cadastro.addEventListener('click', (e) =>{
-                e.preventDefault();
+  const email = document.getElementById('email').value
+  const senha = document.getElementById('senha').value
+  const cadastro = document.getElementById('criar')
 
-                const email = document.getElementById('email').value;
-                const senha = document.getElementById('senha').value;
+  const safeEmail = email.replace(/[@.]/g, "_");
 
-                const safeEmail = email.replace(/[@.]/g, "_");
-
-                set(ref(db, 'Cadastro/' + safeEmail), {
-                    email: email,
-                    senha: senha
-                })
-                .then(() => {
-                    console.log("Dados enviados com sucesso");
-                    alert("Cadastro feito com sucesso!");
-                })
-                .catch((error) => {
-                    if(email === '' || senha === ''){
-                        console.error("Erro ao cadastrar:", error);
-                        alert("Erro ao cadastrar. Tente novamente.");
-                    }
-                });
-            });
-            });
-                
-
+    cadastro.addEventListener('click', function(e){
+      e.preventDefault();
+      set(ref(db, 'Cadastro/' + safeEmail), {
+  email: email,
+  senha: senha
+})
+.then(() => {
+  console.log("Dados enviados com sucesso");
+  alert("Cadastro feito com sucesso!");
+})
+.catch((error) => {
+  console.error("Erro ao cadastrar:", error);
+  alert("Erro ao cadastrar. Tente novamente.");
+});})
     </script>
 </html>
