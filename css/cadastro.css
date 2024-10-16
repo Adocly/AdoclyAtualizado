@@ -105,14 +105,13 @@ body{
     color: #9B6847;
     transition: 0.8s;
 }
-.cadastro #email{
-    margin-top: 10px;
-}
-.cadastro #senha{
+.cadastro input{
     margin-top: 10px;
 }
 a #voltar{
     margin-left: 45%;
+    height: 30px;
+    width: 44%;
 }
 #voltar{
     border: solid 2px #9B6847;

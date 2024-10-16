@@ -14,41 +14,58 @@
         <section>
             <h2>Adocly Animais <img src="../Adocly imagens/WhatsApp_Image_2024-05-11_at_16.55.08-removebg-preview.png"
                     alt=""> </h2>
-            <form action="">
-                <input type="email" name="nome" placeholder="Email:" id="email">
-                <input type="password" name="senha" placeholder="Senha:" id="senha">
-                <input type="submit" href="./sobre.html" placeholder="Criar conta" id="criar">
+            <form>
+                <input type="email" placeholder="Email:" id="email" required>
+                <input type="password" placeholder="Senha:" id="senha" required>
+                <button id="criar">Criar conta</button>
             </form>
             <a href="../html/login.html"> <input type="submit" value="Voltar" id="voltar"> </a>
         </section>
     </div>
     <script type="module">
-        
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
         import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-database.js";
       
-        const firebaseConfig = {
-          apiKey: "AIzaSyADjxwj3klBs7JmVYhXiAAXBr0m3D3qOSU",
-          authDomain: "teste-349f7.firebaseapp.com",
-          projectId: "teste-349f7",
-          storageBucket: "teste-349f7.appspot.com",
-          messagingSenderId: "157850767446",
-          appId: "1:157850767446:web:650798ee2761aeca73abf7"
-        };
+  const firebaseConfig = {
+    apiKey: "AIzaSyADjxwj3klBs7JmVYhXiAAXBr0m3D3qOSU",
+    authDomain: "teste-349f7.firebaseapp.com",
+    projectId: "teste-349f7",
+    storageBucket: "teste-349f7.appspot.com",
+    messagingSenderId: "157850767446",
+    appId: "1:157850767446:web:650798ee2761aeca73abf7"
+    };
       
       
-        const app = initializeApp(firebaseConfig);
-        const db = getDatabase(app);
+  const app = initializeApp(firebaseConfig);
+  const db = getDatabase(app);
       
-        document.getElementById("criar").addEventListener('click', function(e){
-          e.preventDefault();
-          set(ref(db, 'user/' + document.getElementById("email").value),{
-            email: document.getElementById("email").value,
-            senha: document.getElementById("senha").value
-          });
-          alert("Cadastro feito com sucesso!");
-        });
-          </script>
- 
+  document.addEventListener("DOMContentLoaded", function() {
+            const cadastro = document.getElementById('criar')
+            cadastro.addEventListener('click', (e) =>{
+                e.preventDefault();
 
+                const email = document.getElementById('email').value;
+                const senha = document.getElementById('senha').value;
+
+                const safeEmail = email.replace(/[@.]/g, "_");
+
+                set(ref(db, 'Cadastro/' + safeEmail), {
+                    email: email,
+                    senha: senha
+                })
+                .then(() => {
+                    console.log("Dados enviados com sucesso");
+                    alert("Cadastro feito com sucesso!");
+                })
+                .catch((error) => {
+                    if(email === '' || senha === ''){
+                        console.error("Erro ao cadastrar:", error);
+                        alert("Erro ao cadastrar. Tente novamente.");
+                    }
+                });
+            });
+            });
+                
+
+    </script>
 </html>
