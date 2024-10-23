@@ -5,13 +5,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+html{
     background-image: url(Tela\ verde.png);
-    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-    
 }
 .navegacao{
     background-image:url("./Branco2.png");
@@ -116,7 +114,7 @@ body{
     width: 1000px;
     height: 580px;
 }
-h2{
+#procurar{
     display: flex;
     justify-content: center;
     text-align: center;
@@ -237,16 +235,18 @@ form{
     }
     
     .nav {
-      background-color: rgb(1, 143, 39);
-      transition: 0.3s ease;
-      display: none;
-      position: absolute;
-      right: 50%;
-      height: 100%;
-    }
+        background-color: rgb(1, 143, 39);
+        transition: 0.3s ease;
+        display: none;
+        position: absolute;
+        right: -32%;
+        height: 100.8%;
+        top: -0.5px;
+      }
     
     .nav ul {
       padding: 0 22px;
+      margin-top: 50%;
     }
     
     .nav li {
@@ -323,6 +323,7 @@ form{
         justify-content: space-between;
     }
     svg{
+        display: flex;
         width: 35px;
         height: 60px;
     }
@@ -353,7 +354,7 @@ form{
     .card-endereco{
         margin-left: 5%;
         width: 90%;
-        height: 550px;
+        height: -100%;
     }
     .googleMaps{
         width: 90%;

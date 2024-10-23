@@ -8,7 +8,7 @@
 main{
     background-image: url(Tela\ sobre.png);
     background-repeat: no-repeat;
-   background-position: cover;
+    background-position: cover;
     width: 100vw;
     height:100vh;
 }
@@ -103,6 +103,11 @@ main{
     height: 55px;
     margin-left: 50px;
 }
+#cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
 .card-sobre{
     display: flex;
     align-items: center;
@@ -112,8 +117,6 @@ main{
     border: solid 3px rgb(1, 143, 39);
     box-shadow: 2px 4px 4px 0px rgb(1, 143, 39);
     border-radius: 15px;
-    margin-top: 3.5%;
-    margin-left: 20%;
 }
 .card-sobre2{
     flex-direction: column;
@@ -194,16 +197,18 @@ p{
     }
     
     .nav {
-      background-color: rgb(1, 143, 39);
-      transition: 0.3s ease;
-      display: none;
-      position: absolute;
-      right: 50%;
-      height: 100%;
-    }
+        background-color: rgb(1, 143, 39);
+        transition: 0.3s ease;
+        display: none;
+        position: absolute;
+        right: -32%;
+        height: 100.8%;
+        top: -0.5px;
+      }
     
     .nav ul {
       padding: 0 22px;
+      margin-top: 50%;
     }
     
     .nav li {
@@ -286,6 +291,7 @@ p{
         justify-content: space-between;
     }
     svg{
+        display: flex;
         width: 35px;
         height: 60px;
     }
@@ -337,9 +343,11 @@ p{
         }
         h4{
             font-size: 10px;
-            margin-top: none;
+            margin-top: -1%;
+            gap: 1%;
         }
         p{
+            margin-top: 1%;
             font-size: 13px;
         }
     }
