@@ -118,10 +118,10 @@ html{
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     font-family: Merriweather;
     color: #9B6847;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 .googleMaps{
     border: solid 2px rgb(1, 143, 39);
