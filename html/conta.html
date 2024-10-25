@@ -10,30 +10,57 @@
 
 <body>
 
+    <div class="navegacao">
+        <div id="img-adocly">
+            <img src="../Adocly imagens/WhatsApp_Image_2024-05-11_at_16.55.08-removebg-preview.png" alt="" id="imagem">
+            <h2 id="adoclyH2">Adocly <br>Animais</h2>
+
+            <div class="hamburguerMenu" >
+                <div id="menu">
+                    <div id="menu-bar" onclick="menuOnClick()">
+                      <div id="bar1" class="bar"></div>
+                      <div id="bar2" class="bar"></div>
+                      <div id="bar3" class="bar"></div>
+                    </div>
+                    <nav class="nav" id="nav">
+                      <ul>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Adoção</a></li>
+                        <li><a href="#">Clínicas</a></li>
+                        <li><a href="#">Avaliações</a></li>
+                        <li><a href="#">Conta</a></li>
+                      </ul>
+                    </nav> 
+                  </div>
+                </div>
+        </div>
+    </div>
+
     <header>
         <button id="btn">
 
             <a href="./sobre.html">
                 <p> Voltar</p>
             </a>
-
+  
         </button>
     </header>
 
     <div class="informacoes">
         <div class="config">
             <div class="usuario">
-                <img src="../Adocly imagens/G.Nina.jpeg" alt="">
-                <h3 id="nomeusu1">Nome de usuário</h3>
-                <input type="text" placeholder="Mudar nome:" id="nome1">
+                <img id="FPerfil" src="../Adocly imagens/G.Nina.jpeg" alt="">
+                <h3 id="nomeusu1"></h3>
+                <input type="text" placeholder="Adicione um nome de usuário:" id="nome1">
                 <button id="btn2">Confirmar</button>
             </div>
 
             <div class="info2">
                 <h2 id="info1">Informações da conta</h2>
-                <input type="text" placeholder="Cidade:" id="cidade">
-                <input type="text" placeholder="Bairro:" id="bairro">
-                <button id="btn3">Mudar endereço</button>
+                <div class="conta">
+                    <h4 id="emailDefinido">Email:</h4>
+                    <h4 id="senhaDefinida">Senha:</h4>
+                </div>
                 <input type="email" placeholder="Email:" id="email">
                 <input type="password" placeholder="Senha:" id="senha">
                 <button id="btn4">Mudar conta</button>
@@ -42,6 +69,49 @@
         </div>
 
     </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+
+    <script>
+        const firebaseConfig = {
+          apiKey: "AIzaSyB1zvYFQg0EkG30pzy17YA9UVZ4jUCiYpc",
+          authDomain: "adoclyanimais-8a6d0.firebaseapp.com",
+          databaseURL: "https://adoclyanimais-8a6d0-default-rtdb.firebaseio.com",
+          projectId: "adoclyanimais-8a6d0",
+          storageBucket: "adoclyanimais-8a6d0.appspot.com",
+          messagingSenderId: "122709311228",
+          appId: "1:122709311228:web:6a50080d5601d3be402179",
+          measurementId: "G-CQWMXPYCFN"
+      };
+  
+          firebase.initializeApp(firebaseConfig);
+
+        document.getElementById('btn4').addEventListener('click', function() {
+          const email = document.getElementById('email').value; //variável que pega o valor do email
+          const senha = document.getElementById('senha').value;
+
+        firebase.auth().createUserWithEmailAndPassword(email, senha)
+        .then((userCredential) => {
+            alert("Email alterado com sucesso. Email cadastrado:" + email);
+            const emailDefinido = document.getElementById('emailDefinido')
+            emailDefinido.innerHTML = email;
+            
+        })
+        .catch((error) => {
+            alert("Erro ao cadastrar: " + error.message);
+        });
+    });
+        const nomeDefinido = document.getElementById('nomeusu1');
+
+        const BtnNome = document.getElementById('btn2');
+        BtnNome.addEventListener('click', function() {
+                nomeDefinido.innerHTML = document.getElementById('nome1').value;
+        })
+        
+        
+    </script>
 </body>
 
 </html>
