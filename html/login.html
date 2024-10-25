@@ -19,7 +19,7 @@
             <form>
                 <input type="email" name="nome" placeholder="Email:" id="email" required>
                 <input type="password" name="senha" placeholder="Senha:" id="senha" required>
-                <a href="../html/sobre.html" id="login">Login</a>
+                <a href="#" id="login">Login</a>
             </form>
 
             <p>Ainda não possui uma conta? <a href="../html/cadastro.html"><input type="submit" value="Cadastre-se"
@@ -27,7 +27,41 @@
         </section>
     </div>
 
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
 
+    <script>
+    const firebaseConfig = {
+        apiKey: "AIzaSyB1zvYFQg0EkG30pzy17YA9UVZ4jUCiYpc",
+        authDomain: "adoclyanimais-8a6d0.firebaseapp.com",
+        databaseURL: "https://adoclyanimais-8a6d0-default-rtdb.firebaseio.com",
+        projectId: "adoclyanimais-8a6d0",
+        storageBucket: "adoclyanimais-8a6d0.appspot.com",
+        messagingSenderId: "122709311228",
+        appId: "1:122709311228:web:6a50080d5601d3be402179",
+        measurementId: "G-CQWMXPYCFN"
+    };
+
+        firebase.initializeApp(firebaseConfig);
+
+        //PROCURAR EMAIL CADASTRADO
+
+        document.querySelector('#login').addEventListener('click', function() {
+            const email = document.getElementById('email').value; //variável que pega o valor do email
+            const senha = document.getElementById('senha').value; //variável que pega a senha
+
+            // AUTENTICAÇÃO DO USUÁRIO
+            firebase.auth().signInWithEmailAndPassword(email, senha) //função do FIREBASE que pega o email e a senha
+            .then(response => {
+                alert("Usuário conectado com sucesso!"); //opcional
+                window.location.href = "./sobre.html"; // Redireciona para index2.html
+            })
+            .catch(error => {
+                alert("Usuário não encontrado | email ou senha incorretos"); // Mostra erro em um alert!
+                console.log("Erro!", error);
+            });
+        });
+</script>
 
 </body>
 

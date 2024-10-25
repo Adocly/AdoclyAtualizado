@@ -14,50 +14,47 @@
         <section>
             <h2>Adocly Animais <img src="../Adocly imagens/WhatsApp_Image_2024-05-11_at_16.55.08-removebg-preview.png"
                     alt=""> </h2>
-            <form>
+            <div>
                 <input type="email" placeholder="Email:" id="email" required>
                 <input type="password" placeholder="Senha:" id="senha" required>
                 <button id="criar" >Criar conta</button>
-            </form>
+            </div>
             <a href="../html/login.html"> <input type="submit" value="Voltar" id="voltar"> </a>
         </section>
     </div>
-    <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
-        import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-database.js";
-      
-  const firebaseConfig = {
-    apiKey: "AIzaSyADjxwj3klBs7JmVYhXiAAXBr0m3D3qOSU",
-    authDomain: "teste-349f7.firebaseapp.com",
-    projectId: "teste-349f7",
-    storageBucket: "teste-349f7.appspot.com",
-    messagingSenderId: "157850767446",
-    appId: "1:157850767446:web:650798ee2761aeca73abf7"
-    };
-      
-      
-  const app = initializeApp(firebaseConfig);
-  const db = getDatabase(app);
-      
-  const email = document.getElementById('email').value
-  const senha = document.getElementById('senha').value
-  const cadastro = document.getElementById('criar')
 
-  const safeEmail = email.replace(/[@.]/g, "_");
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
 
-    cadastro.addEventListener('click', function(e){
-      e.preventDefault();
-      set(ref(db, 'Cadastro/' + safeEmail), {
-  email: email,
-  senha: senha
-})
-.then(() => {
-  console.log("Dados enviados com sucesso");
-  alert("Cadastro feito com sucesso!");
-})
-.catch((error) => {
-  console.error("Erro ao cadastrar:", error);
-  alert("Erro ao cadastrar. Tente novamente.");
-});})
+    <script>
+      const firebaseConfig = {
+          apiKey: "AIzaSyB1zvYFQg0EkG30pzy17YA9UVZ4jUCiYpc",
+          authDomain: "adoclyanimais-8a6d0.firebaseapp.com",
+          databaseURL: "https://adoclyanimais-8a6d0-default-rtdb.firebaseio.com",
+          projectId: "adoclyanimais-8a6d0",
+          storageBucket: "adoclyanimais-8a6d0.appspot.com",
+          messagingSenderId: "122709311228",
+          appId: "1:122709311228:web:6a50080d5601d3be402179",
+          measurementId: "G-CQWMXPYCFN"
+      };
+  
+          firebase.initializeApp(firebaseConfig);
+
+        document.getElementById('criar').addEventListener('click', function() {
+          const email = document.getElementById('email').value; //variável que pega o valor do email
+          const senha = document.getElementById('senha').value;
+
+        firebase.auth().createUserWithEmailAndPassword(email, senha)
+        .then((userCredential) => {
+            alert("Cadastro realizado com sucesso! Bem-vindo, " + email);
+            window.location.href = "./sobre.html"
+        })
+        .catch((error) => {
+            alert("Erro ao cadastrar: " + error.message);
+        });
+    });
+
+
+
     </script>
 </html>
