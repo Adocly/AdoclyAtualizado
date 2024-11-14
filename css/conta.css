@@ -7,8 +7,8 @@
 }
 body{
     background-image: url(Tela\ verde.png);
-    background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
     width: 100%;
     height: 100%;
 }
@@ -58,10 +58,6 @@ h3{
     flex-direction: row;
     width: 95%;
     height: 610px;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 2%;
-    gap: 200px;
     font-family: Merriweather;
     font-size: 20px;
     color: #9B6847;
@@ -82,34 +78,6 @@ h3{
     border-radius: 30px;
     background-color: white;
     gap: 10px;
-}
-#cidade{
-    width: 300px;
-    height: 30px;
-    margin-left: 90px;
-    font-family: Merriweather;
-    font-size: 15px;
-    border-radius: 5px;
-    border: solid 2px #9B6847;
-    outline: none;
-    padding: 2%;
-}
-#cidade::placeholder{
-    color: #9B6847;
-}
-#bairro{
-    width: 300px;
-    height: 30px;
-    margin-left: 90px;
-    font-family: Merriweather;
-    font-size: 15px;
-    border-radius: 5px;
-    border: solid 2px #9B6847;
-    outline: none;
-    padding: 2%;
-}
-#bairro::placeholder{
-    color: #9B6847;
 }
 #email{
     width: 300px;
@@ -175,6 +143,23 @@ h3{
     border: solid 2px #9B6847;
     background-color: white;
 }
+#excluirConta{
+    width: 200px;
+    height: 25px;
+    font-family: Merriweather;
+    font-size: 15px;
+    border-radius: 20px;
+    background-color: #6AB1E4;
+    color: white;
+    cursor: pointer;
+    border: none;     
+}
+#excluirConta:hover{
+    color: #c91b1b;
+    transition: 0.8s;
+    border: solid 2px #c91b1b;
+    background-color: white;
+}
 #info1{
     margin-top: 90px;
     margin-left: 80px;
@@ -182,9 +167,6 @@ h3{
 #info2{
     margin-top: 50px;
     margin-left: 30px;
-}
-.conta{
-    border: solid 2px black;
 }
 #nome1{
     width: 300px;
@@ -215,9 +197,9 @@ h3{
     border: none;
 }
 #btn2:hover{
-    color: #9B6847;
+    color: #ca2828;
     transition: 0.8s;
-    border: solid 2px #9B6847;
+    border: solid 2px #ca2828;
     background-color: white;
 }
 .info2{
@@ -346,13 +328,7 @@ h3{
       height: 460px;
       transform: translate(-60%,-30%);
     }
-    body{   
-        background-image: url(./Tela\ verde.png);
-        background-size: cover;
-        width: 100vw;
-        height: 100vh;
-     }
-     .navegacao{
+    .navegacao{
         background-image: none;
         background-color: white;
         border: solid 2px black;
@@ -363,10 +339,10 @@ h3{
         justify-content: space-between;
     }
     #imagem{
+        display: flex;
         width: 50px;
         height: 50px;
         margin-left: 0px;
-   
     }
     #adoclyH2{
         display: flex;
@@ -375,57 +351,45 @@ h3{
         text-align: center;
         color: #9B6847;
     }
+    #menu-icon{
+        width: 50px;
+        height: 50px;
+        display: flex;
+    }
     #btn{
         display: none;
     }
-
-    .config{
-        display: flex;
-        justify-content: center;
-        margin-top: 500px;
-        width: 350px;
-        height: 900px;
-        align-items: center;
-        flex-direction: column;
-        margin-right: 150px;
-        align-items: center;
-        
-    }
-    h3{
-        text-align: center;
-        flex-direction: column;
-    }
     .informacoes{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 300px;
-        height: 700px;
-        margin-left: 2%;
+        margin-top: 20%;
+        width: 50%;
+        height: 80%;
+    }
+    .config{
         flex-direction: column;
-        margin-top: 2%;
-        gap: 200px;
-        font-family: Merriweather;
-        font-size: 20px;
-        color: #9B6847;
-        
     }
     .usuario{
-        margin-top: 100px;
-        flex-direction: column;
-        height: 5000px;
-        margin-left: 29%;
-       
+        justify-content: center;
+        flex-direction: row;
+        width: 300px;
+    }
+    #FPerfil{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    #nome1{
+        width: 200px;
+    }
+    #info1{
+        font-size: 20px;
+    }
+    #emailDefinido{
+        font-size: 20px;
+    }
+    #email{
+
     }
 
-    .info2{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin-bottom: 35%;
-        margin-right: 70px;
-
-    }
 
 
 
