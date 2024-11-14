@@ -129,7 +129,7 @@ body{
    
 }
 .btnInfo2{
-    width: 168.9px;
+    width: 200px;
     height: 30px;
     border-radius: 20px;
     border: none;
@@ -138,11 +138,11 @@ body{
     position: absolute;
     z-index: 2;
     margin-top: 215px;
-    margin-left: 150px;
+    margin-left: 280px;
    
 }
 .btnInfo3{
-    width: 168.9px;
+    width: 200px;
     height: 30px;
     border-radius: 20px;
     border: none;
@@ -151,11 +151,11 @@ body{
     position: absolute;
     z-index: 2;
     margin-top: 215px;
-    margin-left: 150px;
+    margin-left: 280px;
    
 }
 .btnInfo4{
-    width: 168.9px;
+    width: 200px;
     height: 30px;
     border-radius: 20px;
     border: none;
@@ -164,11 +164,11 @@ body{
     position: absolute;
     z-index: 2;
     margin-top: 215px;
-    margin-left: 150px;
+    margin-left: 280px;
    
 }
 .btnInfo5{
-    width: 168.9px;
+    width: 200px;
     height: 30px;
     border-radius: 20px;
     border: none;
@@ -177,11 +177,11 @@ body{
     position: absolute;
     z-index: 2;
     margin-top: 215px;
-    margin-left: 150px;
+    margin-left: 280px;
    
 }
 .btnInfo6{
-    width: 168.9px;
+    width: 200px;
     height: 30px;
     border-radius: 20px;
     border: none;
@@ -190,11 +190,11 @@ body{
     position: absolute;
     z-index: 2;
     margin-top: 215px;
-    margin-left: 150px;
+    margin-left: 280px;
    
 }
 .btnInfo7{
-    width: 168.9px;
+    width: 200px;
     height: 30px;
     border-radius: 20px;
     border: none;
@@ -203,11 +203,11 @@ body{
     position: absolute;
     z-index: 2;
     margin-top: 215px;
-    margin-left: 150px;
+    margin-left: 280px;
    
 }
 .btnInfo8{
-    width: 168.9px;
+    width: 200px;
     height: 30px;
     border-radius: 20px;
     border: none;
@@ -216,11 +216,11 @@ body{
     position: absolute;
     z-index: 2;
     margin-top: 215px;
-    margin-left: 150px;
+    margin-left: 280px;
    
 }
 .btnInfo9{
-    width: 168.9px;
+    width: 200px;
     height: 30px;
     border-radius: 20px;
     border: none;
@@ -229,11 +229,11 @@ body{
     position: absolute;
     z-index: 2;
     margin-top: 215px;
-    margin-left: 150px;
+    margin-left: 280px;
    
 }
 .btnInfo10{
-    width: 168.9px;
+    width: 200px;
     height: 30px;
     border-radius: 20px;
     border: none;
@@ -242,11 +242,11 @@ body{
     position: absolute;
     z-index: 2;
     margin-top: 215px;
-    margin-left: 150px;
+    margin-left: 280px;
    
 }
 .btnInfo11{
-    width: 168.9px;
+    width: 200px;
     height: 30px;
     border-radius: 20px;
     border: none;
@@ -255,11 +255,11 @@ body{
     position: absolute;
     z-index: 2;
     margin-top: 215px;
-    margin-left: 150px;
+    margin-left: 280px;
    
 }
 .btnInfo12{
-    width: 168.9px;
+    width: 200px;
     height: 30px;
     border-radius: 20px;
     border: none;
@@ -268,11 +268,11 @@ body{
     position: absolute;
     z-index: 2;
     margin-top: 215px;
-    margin-left: 150px;
+    margin-left: 280px;
    
 }
 .btnInfo13{
-    width: 168.9px;
+    width: 200px;
     height: 30px;
     border-radius: 20px;
     border: none;
@@ -281,11 +281,11 @@ body{
     position: absolute;
     z-index: 2;
     margin-top: 215px;
-    margin-left: 150px;
+    margin-left: 280px;
    
 }
 .btnInfo14{
-    width: 168.9px;
+    width: 200px;
     height: 30px;
     border-radius: 20px;
     border: none;
@@ -294,10 +294,100 @@ body{
     position: absolute;
     z-index: 2;
     margin-top: 215px;
-    margin-left: 150px;
+    margin-left: 280px;
    
 }
 .btnInfo:hover{
+    color: #9B6847;
+    cursor: pointer;
+    background-color: white;
+    border: solid 2px #9B6847;
+    transition: 0.8s;
+}
+.btnInfo2:hover{
+    color: #9B6847;
+    cursor: pointer;
+    background-color: white;
+    border: solid 2px #9B6847;
+    transition: 0.8s;
+}
+.btnInfo3:hover{
+    color: #9B6847;
+    cursor: pointer;
+    background-color: white;
+    border: solid 2px #9B6847;
+    transition: 0.8s;
+}
+.btnInfo4:hover{
+    color: #9B6847;
+    cursor: pointer;
+    background-color: white;
+    border: solid 2px #9B6847;
+    transition: 0.8s;
+}
+.btnInfo5:hover{
+    color: #9B6847;
+    cursor: pointer;
+    background-color: white;
+    border: solid 2px #9B6847;
+    transition: 0.8s;
+}.btnInfo6:hover{
+    color: #9B6847;
+    cursor: pointer;
+    background-color: white;
+    border: solid 2px #9B6847;
+    transition: 0.8s;
+}
+.btnInfo7:hover{
+    color: #9B6847;
+    cursor: pointer;
+    background-color: white;
+    border: solid 2px #9B6847;
+    transition: 0.8s;
+}
+.btnInfo8:hover{
+    color: #9B6847;
+    cursor: pointer;
+    background-color: white;
+    border: solid 2px #9B6847;
+    transition: 0.8s;
+}
+.btnInfo9:hover{
+    color: #9B6847;
+    cursor: pointer;
+    background-color: white;
+    border: solid 2px #9B6847;
+    transition: 0.8s;
+}
+.btnInfo10:hover{
+    color: #9B6847;
+    cursor: pointer;
+    background-color: white;
+    border: solid 2px #9B6847;
+    transition: 0.8s;
+}
+.btnInfo11:hover{
+    color: #9B6847;
+    cursor: pointer;
+    background-color: white;
+    border: solid 2px #9B6847;
+    transition: 0.8s;
+}
+.btnInfo12:hover{
+    color: #9B6847;
+    cursor: pointer;
+    background-color: white;
+    border: solid 2px #9B6847;
+    transition: 0.8s;
+}
+.btnInfo13:hover{
+    color: #9B6847;
+    cursor: pointer;
+    background-color: white;
+    border: solid 2px #9B6847;
+    transition: 0.8s;
+}
+.btnInfo14:hover{
     color: #9B6847;
     cursor: pointer;
     background-color: white;
@@ -595,7 +685,10 @@ svg{
     #img-animal{
         width: 90%;
     }
-    .btnInfo{
+    .btnInfo, .btnInfo2, .btnInfo3, .btnInfo4,
+    .btnInfo5, .btnInfo6, .btnInfo7, .btnInfo8,
+    .btnInfo9, .btnInfo10, .btnInfo11, .btnInfo12,
+    .btnInfo13, .btnInfo14{
         width: 45%;
         margin-left: 40%;
     }
