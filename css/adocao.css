@@ -103,19 +103,20 @@ body{
     margin-top: 50px;
     margin-left: 085px;
 }
-.animal-card{ /*card*/
+.animal-card{
    display: flex;
    flex-direction: column;
    justify-content: space-between;
 }
 #adotado{
-    display: none;
+    
     z-index: 2;
     font-size: 30px;
     margin-top: 210px;
-    margin-left: 155px;
+    margin-left: 320px;
 }
 .btnInfo{
+    display: none;
     width: 200px;
     height: 30px;
     border-radius: 20px;
@@ -297,97 +298,10 @@ body{
     margin-left: 280px;
    
 }
-.btnInfo:hover{
-    color: #9B6847;
-    cursor: pointer;
-    background-color: white;
-    border: solid 2px #9B6847;
-    transition: 0.8s;
-}
-.btnInfo2:hover{
-    color: #9B6847;
-    cursor: pointer;
-    background-color: white;
-    border: solid 2px #9B6847;
-    transition: 0.8s;
-}
-.btnInfo3:hover{
-    color: #9B6847;
-    cursor: pointer;
-    background-color: white;
-    border: solid 2px #9B6847;
-    transition: 0.8s;
-}
-.btnInfo4:hover{
-    color: #9B6847;
-    cursor: pointer;
-    background-color: white;
-    border: solid 2px #9B6847;
-    transition: 0.8s;
-}
-.btnInfo5:hover{
-    color: #9B6847;
-    cursor: pointer;
-    background-color: white;
-    border: solid 2px #9B6847;
-    transition: 0.8s;
-}.btnInfo6:hover{
-    color: #9B6847;
-    cursor: pointer;
-    background-color: white;
-    border: solid 2px #9B6847;
-    transition: 0.8s;
-}
-.btnInfo7:hover{
-    color: #9B6847;
-    cursor: pointer;
-    background-color: white;
-    border: solid 2px #9B6847;
-    transition: 0.8s;
-}
-.btnInfo8:hover{
-    color: #9B6847;
-    cursor: pointer;
-    background-color: white;
-    border: solid 2px #9B6847;
-    transition: 0.8s;
-}
-.btnInfo9:hover{
-    color: #9B6847;
-    cursor: pointer;
-    background-color: white;
-    border: solid 2px #9B6847;
-    transition: 0.8s;
-}
-.btnInfo10:hover{
-    color: #9B6847;
-    cursor: pointer;
-    background-color: white;
-    border: solid 2px #9B6847;
-    transition: 0.8s;
-}
-.btnInfo11:hover{
-    color: #9B6847;
-    cursor: pointer;
-    background-color: white;
-    border: solid 2px #9B6847;
-    transition: 0.8s;
-}
-.btnInfo12:hover{
-    color: #9B6847;
-    cursor: pointer;
-    background-color: white;
-    border: solid 2px #9B6847;
-    transition: 0.8s;
-}
-.btnInfo13:hover{
-    color: #9B6847;
-    cursor: pointer;
-    background-color: white;
-    border: solid 2px #9B6847;
-    transition: 0.8s;
-}
-.btnInfo14:hover{
+.btnInfo:hover, .btnInfo2:hover, .btnInfo3:hover, .btnInfo4:hover,
+.btnInfo5:hover, .btnInfo6:hover, .btnInfo7:hover, .btnInfo8:hover,
+.btnInfo9:hover, .btnInfo10:hover, .btnInfo11:hover, .btnInfo12:hover,
+.btnInfo13:hover, .btnInfo14:hover{
     color: #9B6847;
     cursor: pointer;
     background-color: white;
@@ -403,8 +317,6 @@ body{
     position: absolute;
     z-index: 1;   
 }
-
-/*Modal*/
 #img-modal{
     width: 600px;
     height: 400px;
@@ -519,6 +431,8 @@ svg{
 #adocly{
     display: none;
 }
+
+
 @media (min-width: 300px) and (max-width: 1300px){
     
     .hamburguerMenu{
@@ -685,6 +599,12 @@ svg{
     #img-animal{
         width: 90%;
     }
+    #adotado{
+        z-index: 2;
+        font-size: 28px;
+        margin-top: 210px;
+        margin-left: 122%;
+    }
     .btnInfo, .btnInfo2, .btnInfo3, .btnInfo4,
     .btnInfo5, .btnInfo6, .btnInfo7, .btnInfo8,
     .btnInfo9, .btnInfo10, .btnInfo11, .btnInfo12,
@@ -704,5 +624,9 @@ svg{
         width: 90%;
         height: 600px;
         flex-direction: column;
+    }
+
+    .animal-card{
+        display: flex;
     }
 }
