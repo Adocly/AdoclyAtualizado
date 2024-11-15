@@ -125,24 +125,6 @@ h3{
     border: solid 2px #9B6847;
     background-color: white;
 }
-#btn4{
-    width: 200px;
-    height: 25px;
-    margin-left: 189px;
-    font-family: Merriweather;
-    font-size: 15px;
-    border-radius: 20px;
-    background-color: #6AB1E4;
-    color: white;
-    cursor: pointer;
-    border: none; 
-}
-#btn4:hover{
-    color: #9B6847;
-    transition: 0.8s;
-    border: solid 2px #9B6847;
-    background-color: white;
-}
 #excluirConta{
     width: 200px;
     height: 25px;
@@ -365,6 +347,7 @@ h3{
         height: 80%;
     }
     .config{
+        justify-content: center;
         flex-direction: column;
     }
     .usuario{
@@ -385,9 +368,6 @@ h3{
     }
     #emailDefinido{
         font-size: 20px;
-    }
-    #email{
-
     }
 
 
