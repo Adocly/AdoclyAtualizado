@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adocly Animais</title>
     <link rel="stylesheet" href="../css/avaliaçoes.css">
+    <script src="../js/avaliacoes.js" defer></script>
 </head>
 
 <body>
@@ -24,15 +25,16 @@
     <div class="centralizar">
     <form action="https://formsubmit.co/adoclyanimais2024@gmail.com" method="POST">
         <h1>O que achou do site? Achou algum problema? <br>Nos envie um feedback!</h1>
-        <input type="text" name="nome" placeholder="Digite seu nome:" class="nomeEmail" required>
-        <input type="email" name="email" placeholder="Digite seu email:" class="nomeEmail" required>
-        <textarea cols="30" rows="10" name="mensagem" placeholder="Digite seu feedback Aqui!:" required></textarea>
+        <input type="text" name="nome" placeholder="Digite seu nome:" class="nomeEmail" id="nome" required>
+        <input type="email" name="email" placeholder="Digite seu email:" class="nomeEmail" id="email" required>
+        <textarea cols="30" rows="10" name="mensagem" placeholder="Digite seu feedback Aqui!:" id="mensagem" required></textarea>
 
-        <button type="submit">Enviar</button>
+        <button type="submit" id="btnEnviar">Enviar</button>
 
         <input type="hidden" name="_subject" value="Nova mensagem!">
         <input type="text" name="_honey" style="display:none">
         <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://adocly.github.io/AdoclyAtualizado/html/avaliaçoes.html">
     </form>
     </div>
 </body>
