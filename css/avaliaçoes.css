@@ -95,11 +95,61 @@ body{
     height: 55px;
     margin-left: 35px;
 }
+.centralizar{
+    display: flex;
+    justify-content: center;
+    margin-top: 6%;
+}
 form{
+    border: solid 3px rgb(1, 143, 39);
+    box-shadow: 2px 4px 4px 0px rgb(1, 143, 39);
+    border-radius: 10px;
+    background-color: white;
     display: flex;
     flex-direction: column;
     width: 1200px;
     height: 580px;
-    margin-top: 6%;
-    margin-left: 19%;
+    gap: 15px;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: Merriweather;
+    color: #9B6847;
+    margin-top: 5%;
+}
+.nomeEmail{
+    border: solid 2px #9B6847;
+    border-radius: 5px;
+    color: #9B6847;
+    width: 80%;
+    height: 30px;
+    margin-left: 10%;
+    font-family: Merriweather;
+}
+.nomeEmail::placeholder{
+    color: #9B6847;
+}
+textarea{
+    border: solid 2px #9B6847;
+    border-radius: 5px;
+    color: #9B6847;
+    margin-left: 10%;
+    width: 80%;
+    font-family: Merriweather;
+    text-align: center;
+}
+textarea::placeholder{
+    font-size: 15px;
+    color: #9B6847;
+}
+button{
+    margin-left: 25%;
+    width: 50%;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    background-color: #6AB1E4;
+    color: white;
+    font-family: Merriweather;
 }
