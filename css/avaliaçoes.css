@@ -129,6 +129,7 @@ h1{
 }
 .nomeEmail::placeholder{
     color: #9B6847;
+    font-size: 15px;
 }
 textarea{
     border: solid 2px #9B6847;
@@ -137,7 +138,6 @@ textarea{
     margin-left: 10%;
     width: 80%;
     font-family: Merriweather;
-    text-align: center;
 }
 textarea::placeholder{
     font-size: 15px;
@@ -152,4 +152,10 @@ button{
     background-color: #6AB1E4;
     color: white;
     font-family: Merriweather;
+    font-size: 18px;;
+}
+button:hover{
+    color: #9B6847;
+    cursor: pointer;
+    transition: 0.8s;
 }
