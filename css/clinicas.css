@@ -104,13 +104,16 @@ html{
     height: 55px;
     margin-left: 50px;
 }
+.centralizar{
+    display: flex;
+    justify-content: center;
+    margin-top: 6%;
+}
 .card-endereco{
     border: solid 3px rgb(1, 143, 39);
     box-shadow: 2px 4px 4px 0px rgb(1, 143, 39);
     border-radius: 10px;
     background-color: white;
-    margin-top: 6%;
-    margin-left: 23%;
     width: 1000px;
     height: 580px;
 }
