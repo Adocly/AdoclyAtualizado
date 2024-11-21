@@ -159,3 +159,166 @@ button:hover{
     cursor: pointer;
     transition: 0.8s;
 }
+h2{
+    display: none;
+}
+.hamburguerMenu{
+    display: none;
+}
+#img-adocly{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+@media (min-width: 300px) and (max-width: 1300px){
+    
+    .hamburguerMenu{
+        background-color: white;
+        display: flex;
+    }
+
+    #menu {
+      z-index: 2;
+    }
+
+    #menu-bar {
+      width: 35px;
+      height: 40px;
+      margin: 30px 0 20px 20px;
+      cursor: pointer;
+    }
+    
+    .bar {
+      height: 4px;
+      width: 80%;
+      background-color: #000000;
+      display: flex;
+      transition: 0.3s ease;
+    }
+    
+    #bar1 {
+      transform: translateY(-4px);
+    }
+    
+    #bar3 {
+      transform: translateY(4px);
+    }
+    
+    .nav {
+        background-color: rgb(1, 143, 39);
+        transition: 0.3s ease;
+        display: none;
+        position: absolute;
+        right: -32%;
+        height: 100.8%;
+        top: -0.5px;
+      }
+    
+    .nav ul {
+      padding: 0 22px;
+      margin-top: 50%;
+    }
+    
+    .nav li {
+      list-style: none;
+      padding: 12px 0;
+    }
+    
+    .nav li a {
+      font-family: Merriweather;
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+    }
+    
+    .nav li a:hover {
+      font-weight: bold;
+    }
+    
+    .menu-bg, #menu {
+      top: -5px;
+      left: 82%;
+      position: absolute;
+      height: 100%;
+    }
+    
+    .menu-bg {
+      z-index: 1;
+      width: 50px;
+      height: 0;
+      background-color: white;
+      margin: 30px 0 20px 20px;
+      transition: 0.3s ease;
+    }
+    
+    .change {
+      display: block;
+    }
+    
+    .change .bar {
+      background-color: black;
+    }
+    
+    .change #bar1 {
+      transform: translateY(4px) rotateZ(-45deg);
+    }
+    
+    .change #bar2 {
+      opacity: 0;
+    }
+    
+    .change #bar3 {
+      transform: translateY(-6px) rotateZ(45deg);
+    }
+    
+    .change-bg {
+      width: 520px;
+      height: 460px;
+      transform: translate(-60%,-30%);
+    }
+   
+    .abas{
+        display: none;
+    }
+    .navegacao{
+        background-image: none;
+        background-color: white;
+        border: solid 2px black;
+        width: 100vw;
+        height: 60px;
+        display: flex;
+        align-items:flex-start;
+        justify-content: space-between;
+    }
+    #imagem{
+        width: 50px;
+        height: 50px;
+        margin-left: 0px;
+   
+    }
+    h2{
+        display: flex;
+        font-family: Merriweather;
+        font-size: 15px;
+        text-align: center;
+        color: #9B6847;
+    }
+    #menu-icon{
+        width: 50px;
+        height: 50px;
+        display: flex;
+    }
+    svg{
+        display: flex;
+        width: 35px;
+        height: 60px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    form{
+        width: 90%;
+        height: -90%;
+    }
+}
