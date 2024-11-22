@@ -46,9 +46,20 @@
         <a href="../html/adocao.html"><input type="submit" value="Adoção" id="adocao"></a>
         <a href="../html/clinicas.html "> <input type=submit value="Clínicas" id="clinicas"></a>
         <a href="../html/avaliaçoes.html "><input type="submit" value="Avaliações" id="avaliacoes"></a>
-        <button id="btnPerfil"><img src="../Adocly imagens/Perfil.png" alt="" id="imgPerfil"></button>
+        <button id="btnPerfil" onclick="modalConta()"><img src="../Adocly imagens/Perfil.png" alt="" id="imgPerfil"></button>
     </div>
 
+    <div class="janelaConta" id="janelaConta">
+      <div id="modalConta">
+          <div class="infoConta">
+              <h2 id="info2">Informações da conta</h2>
+              <h4>Email: <h4 id="emailConta"></h4></h4>
+              <button>Sair da conta</button>
+              <button>Excluir conta</button>
+              <button id="fecharModal">Sair</button>
+          </div>
+      </div>
+  </div>
 
     <div class="centralizar">
     <div class="card-endereco">

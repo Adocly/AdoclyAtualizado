@@ -111,7 +111,6 @@ body{
    justify-content: space-between;
 }
 #adotado{
-    
     z-index: 2;
     font-size: 30px;
     margin-top: 210px;
@@ -129,7 +128,6 @@ body{
     z-index: 2;
     margin-top: 215px;
     margin-left: 280px;
-   
 }
 .btnInfo2{
     width: 200px;
@@ -142,7 +140,6 @@ body{
     z-index: 2;
     margin-top: 215px;
     margin-left: 280px;
-   
 }
 .btnInfo3{
     width: 200px;
@@ -155,7 +152,6 @@ body{
     z-index: 2;
     margin-top: 215px;
     margin-left: 280px;
-   
 }
 .btnInfo4{
     width: 200px;
@@ -168,7 +164,6 @@ body{
     z-index: 2;
     margin-top: 215px;
     margin-left: 280px;
-   
 }
 .btnInfo5{
     width: 200px;
@@ -181,7 +176,6 @@ body{
     z-index: 2;
     margin-top: 215px;
     margin-left: 280px;
-   
 }
 .btnInfo6{
     width: 200px;
@@ -194,7 +188,6 @@ body{
     z-index: 2;
     margin-top: 215px;
     margin-left: 280px;
-   
 }
 .btnInfo7{
     width: 200px;
@@ -207,7 +200,6 @@ body{
     z-index: 2;
     margin-top: 215px;
     margin-left: 280px;
-   
 }
 .btnInfo8{
     width: 200px;
@@ -220,7 +212,6 @@ body{
     z-index: 2;
     margin-top: 215px;
     margin-left: 280px;
-   
 }
 .btnInfo9{
     width: 200px;
@@ -233,7 +224,6 @@ body{
     z-index: 2;
     margin-top: 215px;
     margin-left: 280px;
-   
 }
 .btnInfo10{
     width: 200px;
@@ -246,7 +236,6 @@ body{
     z-index: 2;
     margin-top: 215px;
     margin-left: 280px;
-   
 }
 .btnInfo11{
     width: 200px;
@@ -259,7 +248,6 @@ body{
     z-index: 2;
     margin-top: 215px;
     margin-left: 280px;
-   
 }
 .btnInfo12{
     width: 200px;
@@ -272,7 +260,6 @@ body{
     z-index: 2;
     margin-top: 215px;
     margin-left: 280px;
-   
 }
 .btnInfo13{
     width: 200px;
@@ -285,7 +272,6 @@ body{
     z-index: 2;
     margin-top: 215px;
     margin-left: 280px;
-   
 }
 .btnInfo14{
     width: 200px;
@@ -298,7 +284,6 @@ body{
     z-index: 2;
     margin-top: 215px;
     margin-left: 280px;
-   
 }
 .btnInfo:hover, .btnInfo2:hover, .btnInfo3:hover, .btnInfo4:hover,
 .btnInfo5:hover, .btnInfo6:hover, .btnInfo7:hover, .btnInfo8:hover,
@@ -366,6 +351,20 @@ h1{
     z-index: 999;
     padding: 0;
 }
+.janelaConta{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #00000080;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    padding: 0;
+}
 #modalAnimais1, #modalAnimais2, #modalAnimais3, 
 #modalAnimais4, #modalAnimais5, #modalAnimais6,
 #modalAnimais7, #modalAnimais8, #modalAnimais9,
@@ -382,6 +381,18 @@ h1{
     justify-content: space-evenly;
     align-items: center;
 }
+#modalConta{
+    position: fixed;
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    border: solid 3px rgb(1, 143, 39);
+    box-shadow: 2px 4px 4px 0px rgb(1, 143, 39);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+}
 .janelaModal.abrir, .janelaModal2.abrir2, .janelaModal3.abrir3, 
 .janelaModal4.abrir4, .janelaModal5.abrir5, .janelaModal6.abrir6,
 .janelaModal7.abrir7, .janelaModal8.abrir8, .janelaModal9.abrir9,
@@ -389,6 +400,10 @@ h1{
 .janelaModal13.abrir13, .janelaModal14.abrir14{
     position: fixed;
     display: flex;
+}
+.janelaConta.abrir{
+    position: fixed;
+    display: flex;  
 }
 #fecharModal1,#fecharModal2,#fecharModal3,
 #fecharModal4,#fecharModal5,#fecharModal6,
@@ -404,11 +419,25 @@ h1{
     margin-top: 5%;
     cursor: pointer;
 }
+#fecharModal{
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: #6AB1E4;
+    color: white;
+    margin-top: 5%;
+    cursor: pointer;
+}
 #fecharModal1:hover,#fecharModal2:hover,#fecharModal3:hover,
 #fecharModal4:hover,#fecharModal5:hover,#fecharModal6:hover,
 #fecharModal7:hover,#fecharModal8:hover,#fecharModal9:hover,
 #fecharModal10:hover,#fecharModal11:hover,#fecharModal12:hover,
 #fecharModal13:hover,#fecharModal14:hover{
+    color: #9B6847;
+    transition: 0.8s;
+}
+#fecharModal:hover{
     color: #9B6847;
     transition: 0.8s;
 }

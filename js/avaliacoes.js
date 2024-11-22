@@ -4,6 +4,17 @@ function menuOnClick() {
     document.getElementById("menu-bg").classList.toggle("change-bg");
   }
 
+function modalConta(){
+    const modal = document.getElementById('janelaConta');
+    modal.classList.add('abrir');
+
+    modal.addEventListener('click', (e) => {
+        if(e.target.id == 'fecharModal'){
+            modal.classList.remove('abrir')
+        };
+    })
+};
+
 const nome = document.getElementById('nome').value;
 const email = document.getElementById('email').value;
 const mensagem = document.getElementById('mensagem').value;
