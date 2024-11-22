@@ -318,9 +318,11 @@ h2{
     }
     h1{
         font-size: 20px;
+        margin-top: 15%;
     }
     form{
         width: 90%;
         height: -90%;
+        gap: 20px;
     }
 }
