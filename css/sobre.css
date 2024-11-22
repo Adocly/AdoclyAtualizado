@@ -13,6 +13,11 @@ main{
     height:100vh;
 }
 .navegacao{
+    display: none;
+}
+.abas{
+    display: flex;
+    justify-content: space-around;
     background-image:url("./Branco2.png");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -20,31 +25,20 @@ main{
     width: 100%;
     height: 110px;
 }
-.abas{
-    margin-left: 23%;
-    margin-right: 10px;
-    margin-top: -90px;
-}
-.hamburguerMenu{
-    display: none;
-}
 #imagem{
     width: 100px;
     height: 100px;
-    margin-left: 300px;
-}
-#menu-icon{
-    display: none;
+    margin-left: 180px;
 }
 #sobre{
     background-color: white ;
     width: 240px;
     height: 80px;
+    margin-top: 6%;
     border: none;
     font-size: 35px;
     font-family: Merriweather;
     cursor: pointer;
-
 }
 #sobre:hover{
     color: #9B6847;
@@ -54,7 +48,7 @@ main{
     background-color: white ;
     width: 240px;
     height: 80px;
-    margin-left: 80px;
+    margin-top: 6%;
     border: none;
     font-size: 35px;
     font-family: Merriweather;
@@ -68,7 +62,7 @@ main{
     background-color: white ;
     width: 240px;
     height: 80px;
-    margin-left: 80px;
+    margin-top: 6%;
     border: none;
     font-size: 35px;
     font-family: Merriweather;
@@ -82,7 +76,7 @@ main{
     background-color: white ;
     width: 240px;
     height: 80px;
-    margin-left: 80px;
+    margin-top: 6%;
     border: none;
     font-size: 35px;
     font-family: Merriweather;
@@ -95,13 +89,17 @@ main{
 #btnPerfil{
     width: 55px;
     height: 55px;
-    margin-left: 120px;
-    margin-bottom: 50px;
+    margin-top: 1%;
 }
 #imgPerfil{
     width: 55px;
     height: 55px;
-    margin-left: 50px;
+}
+.hamburguerMenu{
+    display: none;
+}
+#menu-icon{
+    display: none;
 }
 #cards{
     display: flex;

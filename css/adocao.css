@@ -12,6 +12,11 @@ body{
     overflow-x: hidden;
 }
 .navegacao{
+    display: none;
+}
+.abas{
+    display: flex;
+    justify-content: space-around;
     background-image:url("./Branco2.png");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -19,20 +24,16 @@ body{
     width: 100%;
     height: 110px;
 }
-.abas{
-    margin-left: 23%;
-    margin-right: 10px;
-    margin-top: -90px;
-}
 #imagem{
     width: 100px;
     height: 100px;
-    margin-left: 300px;
+    margin-left: 180px;
 }
 #sobre{
     background-color: white ;
     width: 240px;
     height: 80px;
+    margin-top: 6%;
     border: none;
     font-size: 35px;
     font-family: Merriweather;
@@ -46,7 +47,7 @@ body{
     background-color: white ;
     width: 240px;
     height: 80px;
-    margin-left: 80px;
+    margin-top: 6%;
     border: none;
     font-size: 35px;
     font-family: Merriweather;
@@ -60,7 +61,7 @@ body{
     background-color: white ;
     width: 240px;
     height: 80px;
-    margin-left: 80px;
+    margin-top: 6%;
     border: none;
     font-size: 35px;
     font-family: Merriweather;
@@ -74,7 +75,7 @@ body{
     background-color: white ;
     width: 240px;
     height: 80px;
-    margin-left: 80px;
+    margin-top: 6%;
     border: none;
     font-size: 35px;
     font-family: Merriweather;
@@ -87,13 +88,11 @@ body{
 #btnPerfil{
     width: 55px;
     height: 55px;
-    margin-left: 120px;
-    margin-bottom: 50px;
+    margin-top: 1%;
 }
 #imgPerfil{
     width: 55px;
     height: 55px;
-    margin-left: 35px;
 }
 .animais{
     display: grid;
