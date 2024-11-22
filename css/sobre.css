@@ -90,6 +90,9 @@ main{
     width: 55px;
     height: 55px;
     margin-top: 1%;
+    margin-left: 6%;
+    background-color: #9B6847;
+    border: none;
 }
 #imgPerfil{
     width: 55px;
