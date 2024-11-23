@@ -93,6 +93,7 @@ main{
     margin-left: 6%;
     background-color: #9B6847;
     border: none;
+    cursor: pointer;
 }
 #imgPerfil{
     width: 55px;
@@ -140,6 +141,47 @@ main{
 }
 #fecharModal:hover{
     color: #9B6847;
+    transition: 0.8s;
+}
+.infoConta{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+#info2{
+    font-family: Merriweather;
+    font-size: 30px;
+    color: #9B6847;
+}
+#sairConta{
+    width: 200px;
+    height: 25px;
+    font-family: Merriweather;
+    font-size: 15px;
+    border-radius: 20px;
+    background-color: #6AB1E4;
+    color: white;
+    cursor: pointer;
+    border: none; 
+}
+#sairConta:hover{
+    color: #9B6847;
+    transition: 0.8s;
+}
+#excluirConta{
+    width: 200px;
+    height: 25px;
+    font-family: Merriweather;
+    font-size: 15px;
+    border-radius: 20px;
+    background-color: #6AB1E4;
+    color: white;
+    cursor: pointer;
+    border: none; 
+}
+#excluirConta:hover{
+    color: #c91b1b;
     transition: 0.8s;
 }
 .hamburguerMenu{
