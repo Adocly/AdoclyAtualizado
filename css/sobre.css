@@ -224,6 +224,9 @@ h3{
     border: none;
     margin-top: 5%;
 }
+.aparecerParaCelular{
+    display: none;
+}
 h4{
     color: #9B6847;
     text-align: center;
@@ -377,16 +380,10 @@ p{
         align-items:flex-start;
         justify-content: space-between;
     }
-    svg{
-        display: flex;
-        width: 35px;
-        height: 60px;
-    }
     #imagem{
         width: 50px;
         height: 50px;
         margin-left: 0px;
-   
     }
     h2{
         display: flex;
@@ -394,6 +391,13 @@ p{
         font-size: 15px;
         text-align: center;
         color: #9B6847;
+    }
+    .aparecerParaCelular{
+        display: flex;
+        font-size: 13px;
+        border: none;
+        margin-left: 2%;
+        margin-right: 2%;
     }
     #menu-icon{
         width: 50px;
@@ -408,20 +412,19 @@ p{
         align-items: center;
         justify-content: center;
         width: 80%;
-        height: 500px;
+        height: 560px;
         background-color: white;
         border: solid 3px rgb(1, 143, 39);
         box-shadow: 2px 4px 4px 0px rgb(1, 143, 39);
         border-radius: 15px;
-        margin-left: 0px;
-        margin-top: 50px;
+        margin-top: 5%;
         }
         .card-sobre2{
             flex-direction: column;
             background-color: white;
             border: solid 2px rgb(1, 143, 39);
             width: 85%;
-            height: 85%;
+            height: 90%;
             margin: auto;
         }
 
@@ -430,7 +433,7 @@ p{
         }
         h4{
             font-size: 10px;
-            margin-top: -1%;
+            margin-top: 5%;
             gap: 1%;
         }
         p{
