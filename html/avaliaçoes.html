@@ -52,7 +52,7 @@
         <div class="infoConta">
             <h3 id="info2">Informações da conta</h3>
             <h4 id="emailConta">Email: <h4 id="emailConta"></h4></h4>
-            <button id="sairConta">Sair da conta</button>
+            <button type="button" id="sairConta" onclick="logout()">Sair da conta</button>
             <button id="excluirConta">Excluir conta</button>
             <button id="fecharModal">Sair</button>
         </div>
@@ -74,6 +74,42 @@
         <input type="hidden" name="_next" value="https://adocly.github.io/AdoclyAtualizado/html/avaliaçoes.html">
     </form>
     </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script src="../js/login.js"></script>
+
+    <script>
+        const firebaseConfig = {
+          apiKey: "AIzaSyB1zvYFQg0EkG30pzy17YA9UVZ4jUCiYpc",
+          authDomain: "adoclyanimais-8a6d0.firebaseapp.com",
+          databaseURL: "https://adoclyanimais-8a6d0-default-rtdb.firebaseio.com",
+          projectId: "adoclyanimais-8a6d0",
+          storageBucket: "adoclyanimais-8a6d0.appspot.com",
+          messagingSenderId: "122709311228",
+          appId: "1:122709311228:web:6a50080d5601d3be402179",
+          measurementId: "G-CQWMXPYCFN"
+      };
+  
+          firebase.initializeApp(firebaseConfig);
+
+          function logout(){
+            firebase.auth().signOut().then(() => {
+                alert("Conta deslogada com sucesso!")
+                window.location.href = "../index.html"
+            }).catch(() => {
+                alert("Erro ao sair da conta.")
+            })
+          }
+
+        //   const btnPerfil = document.getElementById('btnPerfil')
+        //   const emailConta = document.getElementById('emailConta');
+        //   btnPerfil.addEventListener('click', function(){
+        //     emailConta.innerHTML = email;
+        //   })
+          
+
+          </script>
 </body>
 
 </html>
