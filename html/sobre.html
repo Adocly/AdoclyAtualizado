@@ -96,7 +96,6 @@
 
     <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
-    <script src="../js/login.js"></script>
 
     <script>
         const firebaseConfig = {
@@ -116,7 +115,8 @@
             firebase.auth().signOut().then(() => {
                 alert("Conta deslogada com sucesso!")
                 window.location.href = "../index.html"
-            }).catch(() => {
+                history.replaceState(null, "", "../index.html")
+                        }).catch(() => {
                 alert("Erro ao sair da conta.")
             })
           }

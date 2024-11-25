@@ -373,7 +373,8 @@
             firebase.auth().signOut().then(() => {
                 alert("Conta deslogada com sucesso!")
                 window.location.href = "../index.html"
-            }).catch(() => {
+                history.replaceState(null, "", "../index.html")
+                        }).catch(() => {
                 alert("Erro ao sair da conta.")
             })
           }

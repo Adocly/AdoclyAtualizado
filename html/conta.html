@@ -67,13 +67,14 @@
               firebase.initializeApp(firebaseConfig);
     
               function logout(){
-                firebase.auth().signOut().then(() => {
-                    alert("Conta deslogada com sucesso!")
-                    window.location.href = "../index.html"
-                }).catch(() => {
-                    alert("Erro ao sair da conta.")
-                })
-              }
+            firebase.auth().signOut().then(() => {
+                alert("Conta deslogada com sucesso!")
+                window.location.href = "../index.html"
+                history.replaceState(null, "", "../index.html")
+                        }).catch(() => {
+                alert("Erro ao sair da conta.")
+            })
+          }
     
             //   const btnPerfil = document.getElementById('btnPerfil')
             //   const emailConta = document.getElementById('emailConta');
