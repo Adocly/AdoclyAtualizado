@@ -90,6 +90,7 @@ body{
 #btnPerfil{
     width: 55px;
     height: 55px;
+    border-radius: 50%;
     margin-top: 1%;
     margin-left: 6%;
     background-color: #9B6847;
