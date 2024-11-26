@@ -407,8 +407,8 @@ form{
       height: 460px;
       transform: translate(-60%,-30%);
     }
-    main{   
-        background-image: url(./Tela\ verde.png);
+    body{   
+        background-image: url(Tela\ verde.png);
         background-size: cover;
         width: 100vw;
         height: 100vh;

@@ -365,8 +365,8 @@ p{
         justify-content: center;
         align-items: center;
     }
-    main{   
-       background-image: url(./Tela\ verde.png);
+    body{   
+       background-image: url(./Tela\ sobre.png);
        background-size: cover;
        width: 100vw;
        height: 100vh;
