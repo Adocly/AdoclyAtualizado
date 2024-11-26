@@ -11,8 +11,6 @@
 
 <body>
 
-
-
         <div class="navegacao">
             <div id="img-adocly">
                 <img src="../Adocly imagens/WhatsApp_Image_2024-05-11_at_16.55.08-removebg-preview.png" alt=""
@@ -112,7 +110,6 @@
           function logout(){
             firebase.auth().signOut().then(() => {
                 alert("Conta deslogada com sucesso!")
-                window.location.href = "../index.html"
                 history.replaceState(null, "", "../index.html")
                         }).catch(() => {
                 alert("Erro ao sair da conta.")
