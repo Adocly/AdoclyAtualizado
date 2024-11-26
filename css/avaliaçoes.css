@@ -412,11 +412,6 @@ h2{
         height: 50px;
         display: flex;
     }
-    svg{
-        display: flex;
-        width: 35px;
-        height: 60px;
-    }
     h1{
         font-size: 20px;
         margin-top: 15%;

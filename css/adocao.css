@@ -502,9 +502,6 @@ h1{
     display: flex;
     align-items:center;
 }
-svg{
-    display: none;
-}
 .hamburguerMenu{
     display: none;
 }
@@ -640,11 +637,6 @@ svg{
     }
     .abas{
         display: none;
-    }
-    svg{
-        display: flex;
-        width: 35px;
-        height: 60px;
     }
     #imagem{
         width: 50px;
