@@ -1,1 +1,1 @@
-var email = document.getElementById('email').value;
+const email = localStorage.getItem('email');

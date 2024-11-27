@@ -13,6 +13,7 @@
 
 
     <div class="login">
+        <button id="teste"> teste </button>
         <section>
             <h2>Adocly Animais <img src="./Adocly imagens/WhatsApp_Image_2024-05-11_at_16.55.08-removebg-preview.png"
                     alt=""> </h2>
@@ -45,9 +46,10 @@
         firebase.initializeApp(firebaseConfig);
 
         //PROCURAR EMAIL CADASTRADO
+        var email = document.getElementById('email').value;
 
         document.querySelector('#login').addEventListener('click', function() {
-            var email = document.getElementById('email').value; //variável que pega o valor do email
+             //variável que pega o valor do email
             const senha = document.getElementById('senha').value; //variável que pega a senha
 
             // AUTENTICAÇÃO DO USUÁRIO
@@ -61,7 +63,17 @@
                 console.log("Erro!", error);
             });
         });
+
+        const teste = document.querySelector("#teste")
+        teste.addEventListener("click",()=>{
+            alert("Olá" + email)
+        })
+
+        
 </script>
+
+
+
 
 </body>
 
