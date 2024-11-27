@@ -486,7 +486,7 @@ h1{
     color: #c91b1b;
     transition: 0.8s;
 }
-#emailConta{
+#emailConta, #emailConta2{
     color: #9B6847;
     text-align: center;
     font-size: 20px;
