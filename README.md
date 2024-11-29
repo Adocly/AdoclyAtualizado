@@ -1,4 +1,4 @@
-﻿# Adocly Animais
+﻿# 🐶 Adocly Animais
 
 <p>Este site tem como foco principal a adoção de animais e localização de clínicas veterinárias.</p>
 
@@ -16,7 +16,7 @@
   <li>Conta (Para aparelhos mobile. Em emuladores é representada por um modal.)</li>
 </ul>
 
-<h2>Funcionalidades</h2>
+<h2> 🚀 Funcionalidades</h2>
 
 <p>O software que estamos fazendo, tem como foco fazer com que pessoas consigam adotar um animal e acharem clínicas veterinárias que não fiquem muito longe de sua residência. Pensando nessa ideia, montamos um site com funções capazes de fazer tais tarefas. O site começará pedindo para o usuário fazer Login ou Cadastrar uma conta. Logo após, o mesmo será direcionado a tela de Sobre, onde nela, contém um texto breve com as instruções de como se utilizar as ferramentas do site. Ainda nessa tela, o usuário terá 3 opções de tela: Adoção, Clínicas e Avaliações. Segue abaixo a configuração de cada tela:<br> 
 
@@ -30,7 +30,7 @@ Além dessas 3 telas, terá mais um modal, onde o usuário poderá acessar as co
 
 
 
-<h2>Tecnologias utilizadas</h2>
+<h2>⚙️ Tecnologias utilizadas</h2>
 <table>
   <tr>
     <td>JavaScript</td>
@@ -40,7 +40,7 @@ Além dessas 3 telas, terá mais um modal, onde o usuário poderá acessar as co
   </tr>
 </table>
 
-<h2>Pré-requisitos (Usuário)</h2>
+<h2> 📱 Pré-requisitos (Usuário)</h2>
 
 <ul>
   <li>Ter um aparelho mobile ou emulador disponível.</li>
@@ -50,7 +50,7 @@ Além dessas 3 telas, terá mais um modal, onde o usuário poderá acessar as co
 </ul>
 
 
-<h2>Pré-requisitos (Dev)</h2>
+<h2> 🖥️ Pré-requisitos (Dev)</h2>
 
 <ul>
   <li>Instalação do VScode ou utilizar de forma online.</li>
@@ -58,7 +58,7 @@ Além dessas 3 telas, terá mais um modal, onde o usuário poderá acessar as co
   <li>Possuir um aparelho emulador para executar o código.</li>
 </ul>
 
-<h2>Estrutura das pastas</h2>
+<h2> 📂 Estrutura das pastas</h2>
 
 <ul>
   <li>Adocly imagens</li>
