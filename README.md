@@ -67,8 +67,7 @@ Além dessas 3 telas, terá mais um modal, onde o usuário poderá acessar as co
   <li>js</li>
 </ul>
 
-<img src="../Adocly imagens/WhatsApp Image 2024-05-11 at 16.55.08.jpeg" alt="">
-![Adocly cachorro](../Adocly imagens/WhatsApp Image 2024-05-11 at 16.55.08.jpeg "Hover text")
+<h2> 🐶 [Acesse o site por aqui:]()</h2>
 
 
 
