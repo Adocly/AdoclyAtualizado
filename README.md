@@ -58,7 +58,17 @@ Além dessas 3 telas, terá mais um modal, onde o usuário poderá acessar as co
   <li>Possuir um aparelho emulador para executar o código.</li>
 </ul>
 
+<h2>Estrutura das pastas</h2>
 
+<ul>
+  <li>Adocly imagens</li>
+  <li>css</li>
+  <li>html</li>
+  <li>js</li>
+</ul>
+
+<img src="../Adocly imagens/WhatsApp Image 2024-05-11 at 16.55.08.jpeg" alt="">
+![Adocly cachorro](../Adocly imagens/WhatsApp Image 2024-05-11 at 16.55.08.jpeg "Hover text")
 
 
 
