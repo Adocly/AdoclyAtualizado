@@ -29,7 +29,7 @@
                         <li><a href="../html/adocao.html">Adoção</a></li>
                         <li><a href="../html/clinicas.html">Clínicas</a></li>
                         <li><a href="../html/avaliaçoes.html">Avaliações</a></li>
-                        <li><a href="../html/conta.html">Conta</a></li>
+                        <li><a href="../html/conta.html" id="btnPerfil">Conta</a></li>
                       </ul>
                     </nav> 
                   </div>
@@ -40,7 +40,9 @@
         <div class="centralizar">
             <div class="infoConta">
                 <h1 id="info2">Informações da conta</h1>
-                <h4>Email: <h4 id="emailConta"></h4></h4>
+
+                <h4> Email: </h4>
+                   <h4 id="emailConta"> aguardando...</h4>
                 <button type="button" id="sairConta" onclick="logout()">Sair da conta</button>
                 <button id="excluirConta">Excluir conta</button>
 
@@ -50,7 +52,8 @@
 
         <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
         <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
-        <script src="../js/login.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-auth-compat.js"></script> -->
     
         <script>
             const firebaseConfig = {
@@ -75,9 +78,23 @@
                 alert("Erro ao sair da conta.")
             })
           }
-              
-    
+          const auth = firebase.auth();
+
+
+          
+        document.getElementById('btnPerfil').addEventListener('click', () => {
+         const user = auth.currentUser;
+
+        if (user) {
+            document.getElementById('emailConta').textContent =  user.email;
+        } else {
+        document.getElementById('emailConta').textContent = 
+            'Erro: Nenhum usuário logado.';
+        }
+            });
+
               </script>
+
 </body>
 
 </html>

@@ -15,4 +15,18 @@ function modalConta(){
     })
 };
 
+const auth = firebase.auth();
+document.getElementById('btnPerfil').addEventListener('click', () => {
+ const user = auth.currentUser;
+
+if (user) {
+    document.getElementById('emailConta2').textContent =  user.email;
+} else {
+document.getElementById('emailConta2').textContent = 
+    'Erro: Nenhum usuário logado.';
+}
+    });
+
+
+
 const enviado = document.getElementById('enviado');
