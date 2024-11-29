@@ -25,6 +25,7 @@
 
     <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+    <script src="../js/cadastro.js"></script>
 
     <script>
       const firebaseConfig = {
@@ -39,23 +40,7 @@
       };
   
           firebase.initializeApp(firebaseConfig);
-
-        document.getElementById('criar').addEventListener('click', function() {
-          const email = document.getElementById('email').value; //variável que pega o valor do email
-          const senha = document.getElementById('senha').value;
-
-        firebase.auth().createUserWithEmailAndPassword(email, senha)
-        .then((userCredential) => {
-            alert("Cadastro realizado com sucesso! Bem-vindo, " + email);
-            window.location.href = "./sobre.html"
-        })
-        .catch((error) => {
-            alert("Erro ao cadastrar: " + error.message);
-        });
-    });
-
-
-
+          
     </script>
     </body>
 </html>

@@ -13,14 +13,13 @@
 
 
     <div class="login">
-        <button id="teste"> teste </button>
         <section>
             <h2>Adocly Animais <img src="./Adocly imagens/WhatsApp_Image_2024-05-11_at_16.55.08-removebg-preview.png"
                     alt=""> </h2>
             <form>
                 <input type="email" name="nome" placeholder="Email:" id="email" required>
                 <input type="password" name="senha" placeholder="Senha:" id="senha" required>
-                <a href="#" id="login">Login</a>
+                <a href="#" id="login" type="submit">Login</a>
             </form>
 
             <p>Ainda não possui uma conta? <a href="./html/cadastro.html"><input type="submit" value="Cadastre-se"
@@ -30,6 +29,7 @@
 
     <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+    <script src="./js/login.js"></script>
 
     <script>
     const firebaseConfig = {
@@ -46,28 +46,6 @@
         firebase.initializeApp(firebaseConfig);
 
         //PROCURAR EMAIL CADASTRADO
-        var email = document.getElementById('email').value;
-
-        document.querySelector('#login').addEventListener('click', function() {
-             //variável que pega o valor do email
-            const senha = document.getElementById('senha').value; //variável que pega a senha
-
-            // AUTENTICAÇÃO DO USUÁRIO
-            firebase.auth().signInWithEmailAndPassword(email, senha) //função do FIREBASE que pega o email e a senha
-            .then(response => {
-                alert("Usuário conectado com sucesso!"); //opcional
-                window.location.href = "./html/sobre.html"; // Redireciona para index2.html
-            })
-            .catch(error => {
-                alert("Usuário não encontrado | email ou senha incorretos"); // Mostra erro em um alert!
-                console.log("Erro!", error);
-            });
-        });
-
-        const teste = document.querySelector("#teste")
-        teste.addEventListener("click",()=>{
-            alert("Olá" + email)
-        })
 
         
 </script>

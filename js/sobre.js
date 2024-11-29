@@ -15,3 +15,24 @@ function modalConta(){
     })
 };
 
+function logout(){
+    firebase.auth().signOut().then(() => {
+        alert("Conta deslogada com sucesso!")
+        history.replaceState(null, "", "../index.html")
+                }).catch(() => {
+        alert("Erro ao sair da conta.")
+    })
+  }
+
+  
+       const auth = firebase.auth();
+        document.getElementById('btnPerfil').addEventListener('click', () => {
+         const user = auth.currentUser;
+
+        if (user) {
+            document.getElementById('emailConta').textContent =  user.email;
+        } else {
+        document.getElementById('emailConta').textContent = 
+            'Erro: Nenhum usuário logado.';
+        }
+            });
