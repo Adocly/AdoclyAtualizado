@@ -192,17 +192,18 @@ document.getElementById('emailConta2').textContent =
     });
 
     const excluirConta = document.getElementById('excluirConta')
+          
 
-excluirConta.addEventListener('click', () =>{
-    const user1 = firebaseAuth.currentUser;
-    if(user1){
-        user1.delete()
-        .then(() => {
-          alert("Conta excluída com sucesso.");
-          window.location.href = "../index.html"
-          history.replaceState(null, "", "../index.html")
-        }).catch((error) => {
-            console.error("Erro ao excluir a conta:", error);
-        })
-    }
-})
+    excluirConta.addEventListener('click', () =>{
+        const user1 = auth.currentUser;
+        if(user1){
+            user1.delete()
+            .then(() => {
+              alert("Conta excluída com sucesso.");
+              window.location.href = "../index.html"
+              history.replaceState(null, "", "../index.html")
+            }).catch((error) => {
+                alert("Erro ao excluir a conta:", error);
+            })
+        }
+    })

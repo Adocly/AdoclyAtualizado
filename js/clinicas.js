@@ -26,10 +26,10 @@ document.getElementById('emailConta2').textContent =
 }
     });
 
-    const excluirConta = document.getElementById('excluirConta')
+const excluirConta = document.getElementById('excluirConta')
 
 excluirConta.addEventListener('click', () =>{
-    const user1 = firebaseAuth.currentUser;
+    const user1 = auth.currentUser;
     if(user1){
         user1.delete()
         .then(() => {
