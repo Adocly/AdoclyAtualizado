@@ -53,7 +53,8 @@
             <div id="modalConta">
                 <div class="infoConta">
                     <h1 id="info2">Informações da conta</h1>
-                    <h4>Email: <h4 id="emailConta"></h4></h4>
+                    <h4>Email:</h4>
+                    <h4 id="emailConta"></h4>
                     <button type="button" id="sairConta" onclick="logout()">Sair da conta</button>
                     <button id="excluirConta">Excluir conta</button>
                     <button id="fecharModal">Sair</button>
@@ -96,6 +97,7 @@
     <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-auth-compat.js"></script>
 
     <script>
+
         const firebaseConfig = {
           apiKey: "AIzaSyB1zvYFQg0EkG30pzy17YA9UVZ4jUCiYpc",
           authDomain: "adoclyanimais-8a6d0.firebaseapp.com",
@@ -108,7 +110,6 @@
       };
   
           firebase.initializeApp(firebaseConfig);
-
           
 
           </script>

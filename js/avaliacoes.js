@@ -29,4 +29,18 @@ document.getElementById('emailConta2').textContent =
 
 
 
-const enviado = document.getElementById('enviado');
+    const excluirConta = document.getElementById('excluirConta')
+
+    excluirConta.addEventListener('click', () =>{
+        const user1 = firebaseAuth.currentUser;
+        if(user1){
+            user1.delete()
+            .then(() => {
+              alert("Conta excluída com sucesso.");
+              window.location.href = "../index.html"
+              history.replaceState(null, "", "../index.html")
+            }).catch((error) => {
+                console.error("Erro ao excluir a conta:", error);
+            })
+        }
+    })

@@ -9,7 +9,7 @@ document.querySelector('#login').addEventListener('click', function() {
     firebase.auth().signInWithEmailAndPassword(email, senha) //função do FIREBASE que pega o email e a senha
     .then(response => {
         alert("Usuário conectado com sucesso!"); //opcional
-        window.location.href = "./html/sobre.html?email=" + encodeURIComponent(email); // Redireciona para index2.html
+        window.location.href = "./html/sobre.html"; // Redireciona para index2.html
     })
     .catch(error => {
         alert("Usuário não encontrado | email ou senha incorretos"); // Mostra erro em um alert!
