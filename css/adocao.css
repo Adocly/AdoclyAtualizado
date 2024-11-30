@@ -513,7 +513,7 @@ h1{
 }
 
 
-@media (min-width: 300px) and (max-width: 1300px){
+@media (min-width: 375px) and (max-width: 430px){
     
     .hamburguerMenu{
         background-color: white;
