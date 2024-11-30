@@ -1,4 +1,5 @@
 ﻿# 🐶 Adocly Animais
+  🐱 [https://adocly.github.io/AdoclyAtualizado/](https://adocly.github.io/AdoclyAtualizado/)
 
 <p>Este site tem como foco principal a adoção de animais e localização de clínicas veterinárias.</p>
 
@@ -60,14 +61,15 @@ Além dessas 3 telas, terá mais um modal, onde o usuário poderá acessar as co
 
 <h2> 📂 Estrutura das pastas</h2>
 
-<ul>
-  <li>Adocly imagens</li>
-  <li>css</li>
-  <li>html</li>
-  <li>js</li>
-</ul>
+Adocly <br>
+└── Adocly imagens <br>
+└── css <br>
+└── html <br>
+└── js  <br>
+└── README.md
 
- 🐶 [https://adocly.github.io/AdoclyAtualizado/](https://adocly.github.io/AdoclyAtualizado/)
+
+
 
 
 
