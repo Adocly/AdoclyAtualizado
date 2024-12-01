@@ -1,5 +1,5 @@
 document.getElementById('criar').addEventListener('click', function() {
-  const email = document.getElementById('email').value; //variável que pega o valor do email
+  const email = document.getElementById('email').value;
   const senha = document.getElementById('senha').value;
 
 firebase.auth().createUserWithEmailAndPassword(email, senha)
