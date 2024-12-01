@@ -55,7 +55,7 @@ body{
     align-items: center;
     padding: 2%;
 }
-#email{
+.emailEsenhaDeco{
     border: solid 2px #9B6847;
     border-radius: 5px;
     width: 100%;
@@ -66,21 +66,7 @@ body{
     color: #9B6847;
     font-family: Merriweather;
 }
-#email::placeholder{
-    color: #9B6847;
-}
-#senha{
-    border: solid 2px #9B6847;
-    border-radius: 5px;
-    width: 100%;
-    height: 30px;
-    margin-right: 4px;
-    outline: none;
-    padding: 2%;
-    color: #9B6847;
-    font-family: Merriweather;
-}
-#senha::placeholder{
+.emailEsenhaDeco::placeholder{
     color: #9B6847;
 }
 #criar{
@@ -131,7 +117,7 @@ a #voltar{
     border: none;
 }
 
-@media (min-width: 300px) and (max-width: 430px){
+@media (min-width: 360px) and (max-width: 430px){
     
     body{
         background-image: url(Background\ Adocly.png);

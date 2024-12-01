@@ -31,7 +31,7 @@ body{
     height: 100px;
     margin-left: 180px;
 }
-#sobre{
+.btnAbas{
     background-color: white ;
     width: 240px;
     height: 80px;
@@ -41,49 +41,7 @@ body{
     font-family: Merriweather;
     cursor: pointer;
 }
-#sobre:hover{
-    color: #9B6847;
-    transition: 0.8s;
-}
-#adocao{
-    background-color: white ;
-    width: 240px;
-    height: 80px;
-    margin-top: 6%;
-    border: none;
-    font-size: 35px;
-    font-family: Merriweather;
-    cursor: pointer;
-}
-#adocao:hover{
-    color: #9B6847;
-    transition: 0.8s;
-}
-#clinicas{
-    background-color: white ;
-    width: 240px;
-    height: 80px;
-    margin-top: 6%;
-    border: none;
-    font-size: 35px;
-    font-family: Merriweather;
-    cursor: pointer;
-}
-#clinicas:hover{
-    color: #9B6847;
-    transition: 0.8s;
-}
-#avaliacoes{
-    background-color: white ;
-    width: 240px;
-    height: 80px;
-    margin-top: 6%;
-    border: none;
-    font-size: 35px;
-    font-family: Merriweather;
-    cursor: pointer;
-}
-#avaliacoes:hover{
+.btnAbas:hover{
     color: #9B6847;
     transition: 0.8s;
 }
@@ -135,6 +93,7 @@ body{
     width: 200px;
     height: 30px;
     border-radius: 20px;
+    font-size: 16px;
     border: none;
     background-color: #6AB1E4;
     color: white;
@@ -151,12 +110,12 @@ body{
     flex-direction: column;
     gap: 20px;
 }
-#info2{
+#info{
     font-family: Merriweather;
     font-size: 30px;
     color: #9B6847;
 }
-#sairConta{
+.sairEexcluirConta{
     width: 200px;
     height: 25px;
     font-family: Merriweather;
@@ -170,17 +129,6 @@ body{
 #sairConta:hover{
     color: #9B6847;
     transition: 0.8s;
-}
-#excluirConta{
-    width: 200px;
-    height: 25px;
-    font-family: Merriweather;
-    font-size: 15px;
-    border-radius: 20px;
-    background-color: #6AB1E4;
-    color: white;
-    cursor: pointer;
-    border: none; 
 }
 #excluirConta:hover{
     color: #c91b1b;
@@ -254,7 +202,7 @@ p{
     align-items:center;
 }
 
-@media (min-width: 300px) and (max-width: 430px){
+@media (min-width: 360px) and (max-width: 430px){
     
     .hamburguerMenu{
         background-color: white;

@@ -31,7 +31,7 @@ body{
     height: 100px;
     margin-left: 180px;
 }
-#sobre{
+.btnAbas{
     background-color: white ;
     width: 240px;
     height: 80px;
@@ -41,49 +41,7 @@ body{
     font-family: Merriweather;
     cursor: pointer;
 }
-#sobre:hover{
-    color: #9B6847;
-    transition: 0.8s;
-}
-#adocao{
-    background-color: white ;
-    width: 240px;
-    height: 80px;
-    margin-top: 6%;
-    border: none;
-    font-size: 35px;
-    font-family: Merriweather;
-    cursor: pointer;
-}
-#adocao:hover{
-    color: #9B6847;
-    transition: 0.8s;
-}
-#clinicas{
-    background-color: white ;
-    width: 240px;
-    height: 80px;
-    margin-top: 6%;
-    border: none;
-    font-size: 35px;
-    font-family: Merriweather;
-    cursor: pointer;
-}
-#clinicas:hover{
-    color: #9B6847;
-    transition: 0.8s;
-}
-#avaliacoes{
-    background-color: white ;
-    width: 240px;
-    height: 80px;
-    margin-top: 6%;
-    border: none;
-    font-size: 35px;
-    font-family: Merriweather;
-    cursor: pointer;
-}
-#avaliacoes:hover{
+.btnAbas:hover{
     color: #9B6847;
     transition: 0.8s;
 }
@@ -114,170 +72,55 @@ body{
    flex-direction: column;
    justify-content: space-between;
 }
-#adotado{
+.adotado{
     z-index: 2;
     font-size: 30px;
     margin-top: 210px;
     margin-left: 320px;
 }
-.btnInfo{
+/*.btnInfo{
     display: none;
-    width: 200px;
-    height: 30px;
-    border-radius: 20px;
-    border: none;
-    background-color: #6AB1E4;
-    color: white;
-    position: absolute;
-    z-index: 2;
-    margin-top: 215px;
-    margin-left: 280px;
-}
-.btnInfo2{
-    width: 200px;
-    height: 30px;
-    border-radius: 20px;
-    border: none;
-    background-color: #6AB1E4;
-    color: white;
-    position: absolute;
-    z-index: 2;
-    margin-top: 215px;
-    margin-left: 280px;
+} 
+ .btnInfo2{
+    display: none;
 }
 .btnInfo3{
-    width: 200px;
-    height: 30px;
-    border-radius: 20px;
-    border: none;
-    background-color: #6AB1E4;
-    color: white;
-    position: absolute;
-    z-index: 2;
-    margin-top: 215px;
-    margin-left: 280px;
+    display: none;
 }
 .btnInfo4{
-    width: 200px;
-    height: 30px;
-    border-radius: 20px;
-    border: none;
-    background-color: #6AB1E4;
-    color: white;
-    position: absolute;
-    z-index: 2;
-    margin-top: 215px;
-    margin-left: 280px;
+    display: none;
 }
 .btnInfo5{
-    width: 200px;
-    height: 30px;
-    border-radius: 20px;
-    border: none;
-    background-color: #6AB1E4;
-    color: white;
-    position: absolute;
-    z-index: 2;
-    margin-top: 215px;
-    margin-left: 280px;
+    display: none;
 }
 .btnInfo6{
-    width: 200px;
-    height: 30px;
-    border-radius: 20px;
-    border: none;
-    background-color: #6AB1E4;
-    color: white;
-    position: absolute;
-    z-index: 2;
-    margin-top: 215px;
-    margin-left: 280px;
+    display: none;
 }
 .btnInfo7{
-    width: 200px;
-    height: 30px;
-    border-radius: 20px;
-    border: none;
-    background-color: #6AB1E4;
-    color: white;
-    position: absolute;
-    z-index: 2;
-    margin-top: 215px;
-    margin-left: 280px;
+    display: none;
 }
 .btnInfo8{
-    width: 200px;
-    height: 30px;
-    border-radius: 20px;
-    border: none;
-    background-color: #6AB1E4;
-    color: white;
-    position: absolute;
-    z-index: 2;
-    margin-top: 215px;
-    margin-left: 280px;
+    display: none;
 }
 .btnInfo9{
-    width: 200px;
-    height: 30px;
-    border-radius: 20px;
-    border: none;
-    background-color: #6AB1E4;
-    color: white;
-    position: absolute;
-    z-index: 2;
-    margin-top: 215px;
-    margin-left: 280px;
-}
+    display: none;
+} 
 .btnInfo10{
-    width: 200px;
-    height: 30px;
-    border-radius: 20px;
-    border: none;
-    background-color: #6AB1E4;
-    color: white;
-    position: absolute;
-    z-index: 2;
-    margin-top: 215px;
-    margin-left: 280px;
+    display: none;
 }
 .btnInfo11{
-    width: 200px;
-    height: 30px;
-    border-radius: 20px;
-    border: none;
-    background-color: #6AB1E4;
-    color: white;
-    position: absolute;
-    z-index: 2;
-    margin-top: 215px;
-    margin-left: 280px;
+    display: none;
 }
 .btnInfo12{
-    width: 200px;
-    height: 30px;
-    border-radius: 20px;
-    border: none;
-    background-color: #6AB1E4;
-    color: white;
-    position: absolute;
-    z-index: 2;
-    margin-top: 215px;
-    margin-left: 280px;
+    display: none;
 }
 .btnInfo13{
-    width: 200px;
-    height: 30px;
-    border-radius: 20px;
-    border: none;
-    background-color: #6AB1E4;
-    color: white;
-    position: absolute;
-    z-index: 2;
-    margin-top: 215px;
-    margin-left: 280px;
+    display: none;
 }
 .btnInfo14{
+    display: none;
+} */
+.btnInfoGeral{
     width: 200px;
     height: 30px;
     border-radius: 20px;
@@ -289,17 +132,14 @@ body{
     margin-top: 215px;
     margin-left: 280px;
 }
-.btnInfo:hover, .btnInfo2:hover, .btnInfo3:hover, .btnInfo4:hover,
-.btnInfo5:hover, .btnInfo6:hover, .btnInfo7:hover, .btnInfo8:hover,
-.btnInfo9:hover, .btnInfo10:hover, .btnInfo11:hover, .btnInfo12:hover,
-.btnInfo13:hover, .btnInfo14:hover{
+.btnInfoGeral:hover{
     color: #9B6847;
     cursor: pointer;
     background-color: white;
     border: solid 2px #9B6847;
     transition: 0.8s;
 }
-#img-animal{
+.img-animal{
     width: 500px;
     height: 260px;
     border: solid 3px rgb(1, 143, 39);
@@ -308,7 +148,7 @@ body{
     position: absolute;
     z-index: 1;   
 }
-#img-modal{
+.img-modal{
     width: 600px;
     height: 400px;
     border-radius: 10px;
@@ -331,17 +171,13 @@ h1{
     background-color: #6AB1E4;
     border-radius: 15px;
 }
-#info{
+.info2{
     font-family: Merriweather;
     font-size: 20px;
     color: black;
     margin-top: 3%;
 }
-.janelaModal, .janelaModal2, .janelaModal3, 
-.janelaModal4, .janelaModal5, .janelaModal6,
-.janelaModal7, .janelaModal8, .janelaModal9,
-.janelaModal10, .janelaModal11, .janelaModal12,
-.janelaModal13, .janelaModal14{
+.janelaModalGeral{
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -369,11 +205,7 @@ h1{
     z-index: 999;
     padding: 0;
 }
-#modalAnimais1, #modalAnimais2, #modalAnimais3, 
-#modalAnimais4, #modalAnimais5, #modalAnimais6,
-#modalAnimais7, #modalAnimais8, #modalAnimais9,
-#modalAnimais10, #modalAnimais11, #modalAnimais12,
-#modalAnimais13, #modalAnimais14{
+.modalAnimaisGeral{
     position: fixed;
     width: 1200px;
     height: 600px;
@@ -409,39 +241,19 @@ h1{
     position: fixed;
     display: flex;  
 }
-#fecharModal1,#fecharModal2,#fecharModal3,
-#fecharModal4,#fecharModal5,#fecharModal6,
-#fecharModal7,#fecharModal8,#fecharModal9,
-#fecharModal10,#fecharModal11,#fecharModal12,
-#fecharModal13,#fecharModal14{
+.fecharModalGeral{
     width: 200px;
     height: 30px;
     border-radius: 20px;
     border: none;
     background-color: #6AB1E4;
+    font-size: 16px;
+    font-family: Merriweather;
     color: white;
     margin-top: 5%;
     cursor: pointer;
 }
-#fecharModal{
-    width: 200px;
-    height: 30px;
-    border-radius: 20px;
-    border: none;
-    background-color: #6AB1E4;
-    color: white;
-    margin-top: 5%;
-    cursor: pointer;
-}
-#fecharModal1:hover,#fecharModal2:hover,#fecharModal3:hover,
-#fecharModal4:hover,#fecharModal5:hover,#fecharModal6:hover,
-#fecharModal7:hover,#fecharModal8:hover,#fecharModal9:hover,
-#fecharModal10:hover,#fecharModal11:hover,#fecharModal12:hover,
-#fecharModal13:hover,#fecharModal14:hover{
-    color: #9B6847;
-    transition: 0.8s;
-}
-#fecharModal:hover{
+.fecharModalGeral:hover{
     color: #9B6847;
     transition: 0.8s;
 }
@@ -451,12 +263,12 @@ h1{
     flex-direction: column;
     gap: 20px;
 }
-#info2{
+#info{
     font-family: Merriweather;
     font-size: 30px;
     color: #9B6847;
 }
-#sairConta{
+.sairEexcluirConta{
     width: 200px;
     height: 25px;
     font-family: Merriweather;
@@ -471,22 +283,11 @@ h1{
     color: #9B6847;
     transition: 0.8s;
 }
-#excluirConta{
-    width: 200px;
-    height: 25px;
-    font-family: Merriweather;
-    font-size: 15px;
-    border-radius: 20px;
-    background-color: #6AB1E4;
-    color: white;
-    cursor: pointer;
-    border: none; 
-}
 #excluirConta:hover{
     color: #c91b1b;
     transition: 0.8s;
 }
-#emailConta, #emailConta2{
+.emailContaGeral{
     color: #9B6847;
     text-align: center;
     font-size: 20px;
@@ -513,7 +314,7 @@ h1{
 }
 
 
-@media (min-width: 300px) and (max-width: 430px){
+@media (min-width: 360px) and (max-width: 430px){
     
     .hamburguerMenu{
         background-color: white;
@@ -671,31 +472,24 @@ h1{
         margin-top: 50px;
         margin-left: 5%;
     }
-    #img-animal{
+    .img-animal{
         width: 90%;
     }
-    #adotado{
+    .adotado{
         z-index: 2;
         font-size: 28px;
         margin-top: 210px;
-        margin-left: 122%;
+        margin-left: 115%;
     }
-    .btnInfo, .btnInfo2, .btnInfo3, .btnInfo4,
-    .btnInfo5, .btnInfo6, .btnInfo7, .btnInfo8,
-    .btnInfo9, .btnInfo10, .btnInfo11, .btnInfo12,
-    .btnInfo13, .btnInfo14{
-        width: 45%;
-        margin-left: 40%;
+    .btnInfoGeral{
+        width: 50%;
+        margin-left: 36%;
     }
-    #img-modal{
+    .img-modal{
         width: 85%;
-        height: 45%;
+        height: 40%;
     }
-    #modalAnimais1, #modalAnimais2, #modalAnimais3, 
-    #modalAnimais4, #modalAnimais5, #modalAnimais6,
-    #modalAnimais7, #modalAnimais8, #modalAnimais9,
-    #modalAnimais10, #modalAnimais11, #modalAnimais12,
-    #modalAnimais13, #modalAnimais14{
+    .modalAnimaisGeral{
         width: 90%;
         height: 600px;
         flex-direction: column;
@@ -703,5 +497,8 @@ h1{
 
     .animal-card{
         display: flex;
+    }
+    .info2{
+        font-size: 16px;
     }
 }
