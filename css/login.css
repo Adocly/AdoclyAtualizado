@@ -139,7 +139,7 @@ p{
     border: none;
 }
 
-@media (min-width: 375px) and (max-width: 700px){
+@media (min-width: 375px) and (max-width: 730px){
 
     body{
         background-image: url(Background\ Adocly.png);
