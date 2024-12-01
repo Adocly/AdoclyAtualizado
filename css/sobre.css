@@ -254,7 +254,7 @@ p{
     align-items:center;
 }
 
-@media (min-width: 375px) and (max-width: 730px){
+@media (min-width: 300px) and (max-width: 430px){
     
     .hamburguerMenu{
         background-color: white;
