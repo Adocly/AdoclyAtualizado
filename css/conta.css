@@ -161,7 +161,7 @@ body{
     flex-direction: column;
     margin-top: 15%;
 }
-#info2{
+#info{
     text-align: center;
     font-family: Merriweather;
     font-size: 20px;
@@ -177,7 +177,14 @@ h4{
     border: none;
     font-family: Merriweather;
 }
-#sairConta{
+.emailContaGeral{
+    color: #9B6847;
+    text-align: center;
+    font-size: 20px;
+    border: none;
+    font-family: Merriweather;
+}
+.sairEexcluirConta{
     width: 200px;
     height: 25px;
     font-family: Merriweather;
@@ -192,18 +199,6 @@ h4{
 #sairConta:hover{
     color: #9B6847;
     transition: 0.8s;
-}
-#excluirConta{
-    width: 200px;
-    height: 25px;
-    font-family: Merriweather;
-    font-size: 15px;
-    margin-left: 5%;
-    border-radius: 20px;
-    background-color: #6AB1E4;
-    color: white;
-    cursor: pointer;
-    border: none; 
 }
 #excluirConta:hover{
     color: #c91b1b;

@@ -40,25 +40,25 @@
     <div class="abas">
       <img src="../Adocly imagens/WhatsApp_Image_2024-05-11_at_16.55.08-removebg-preview.png" alt=""
       id="imagem">
-      <a href="../html/sobre.html"> <input type="submit" value="Sobre" id="sobre"></a>
-      <a href="../html/adocao.html"><input type="submit" value="Adoção" id="adocao"></a>
-      <a href="../html/clinicas.html "> <input type=submit value="Clínicas" id="clinicas"></a>
-      <a href="../html/avaliaçoes.html "><input type="submit" value="Avaliações" id="avaliacoes"></a>
+      <a href="../html/sobre.html"> <input type="submit" value="Sobre" class="btnAbas"></a>
+      <a href="../html/adocao.html"><input type="submit" value="Adoção" class="btnAbas"></a>
+      <a href="../html/clinicas.html "> <input type=submit value="Clínicas" class="btnAbas"></a>
+      <a href="../html/avaliaçoes.html "><input type="submit" value="Avaliações" class="btnAbas"></a>
       <button id="btnPerfil" onclick="modalConta()"><img src="../Adocly imagens/Perfil.png" alt="" id="imgPerfil"></button>
   </div>
 
   <div class="janelaConta" id="janelaConta">
-    <div id="modalConta">
-        <div class="infoConta">
-            <h3 id="info2">Informações da conta</h3>
-            <h4 id="emailConta">Email:</h4>
-            <h4 id="emailConta2"></h4>
-            <button type="button" id="sairConta" onclick="logout()">Sair da conta</button>
-            <button id="excluirConta">Excluir conta</button>
-            <button id="fecharModal">Sair</button>
-        </div>
-    </div>
-</div>
+      <div id="modalConta">
+          <div class="infoConta">
+              <h1 id="info">Informações da conta</h1>
+              <h4 class="emailContaGeral">Email:</h4>
+              <h4 class="emailContaGeral" id="emailConta2"></h4>
+              <button class="sairEexcluirConta" id="sairConta" onclick="logout()">Sair da conta</button>
+              <button class="sairEexcluirConta" id="excluirConta">Excluir conta</button>
+              <button class="fecharModalGeral" id="fecharModal">Sair</button>
+          </div>
+      </div>
+  </div>
 
     <div class="centralizar">
     <form action="https://formsubmit.co/adoclyanimais2024@gmail.com" method="POST">
