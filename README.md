@@ -44,7 +44,7 @@ Além dessas 3 telas, terá mais um modal, onde o usuário poderá acessar as co
 <h2> 📱 Pré-requisitos (Usuário)</h2>
 
 <ul>
-  <li>Ter um aparelho mobile ou emulador disponível (Celulares/aparelhos mobile com no mínimo 375px e máximo de 430px de largura).</li>
+  <li>Ter um aparelho mobile ou emulador disponível (Celulares/aparelhos mobile com no mínimo 360px e máximo de 430px de largura).</li>
   <li>Estar conectado a rede wi-fi.</li>
   <li>Ter um email válido.</li>
   <li>Número de telefone (Opcinal).</li>
@@ -62,10 +62,12 @@ Além dessas 3 telas, terá mais um modal, onde o usuário poderá acessar as co
 <h2> 📂 Estrutura das pastas</h2>
 
 Adocly <br>
-└── Adocly imagens <br>
-└── css <br>
-└── html <br>
-└── js  <br>
+├──Adocly imagens<br>
+│   ├── Cachorros<br>
+│   └── Gatos<br>
+├──  css <br>
+├── html <br>
+├──  js  <br>
 └── README.md
 
 
