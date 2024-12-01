@@ -53,7 +53,7 @@
         <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
         <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
        <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app-compat.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-auth-compat.js"></script> -->
+        <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-auth-compat.js"></script>
     
         <script>
             const firebaseConfig = {
@@ -68,30 +68,6 @@
           };
       
               firebase.initializeApp(firebaseConfig);
-    
-              function logout(){
-            firebase.auth().signOut().then(() => {
-                alert("Conta deslogada com sucesso!")
-                window.location.href = "../index.html"
-                history.replaceState(null, "", "../index.html")
-                        }).catch(() => {
-                alert("Erro ao sair da conta.")
-            })
-          }
-          const auth = firebase.auth();
-
-
-          
-        document.getElementById('btnPerfil').addEventListener('click', () => {
-         const user = auth.currentUser;
-
-        if (user) {
-            document.getElementById('emailConta').textContent =  user.email;
-        } else {
-        document.getElementById('emailConta').textContent = 
-            'Erro: Nenhum usuário logado.';
-        }
-            });
 
               </script>
 
