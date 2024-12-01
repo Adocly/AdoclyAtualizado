@@ -322,7 +322,7 @@ h1{
     }
 
     #menu {
-      z-index: 2;
+      z-index: 3;
     }
 
     #menu-bar {
@@ -352,8 +352,8 @@ h1{
         background-color: rgb(1, 143, 39);
         transition: 0.3s ease;
         display: none;
-        position: absolute;
-        right: -32%;
+        position: fixed;
+        right: 0%;
         height: 100.8%;
         top: -0.5px;
       }
