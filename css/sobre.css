@@ -228,7 +228,7 @@ p {
     color: #9B6847;
     text-align: center;
     font-size: 18px;
-    margin-top: 5%;
+    margin-top: 2%;
     font-family: Merriweather;
 }
 
@@ -407,8 +407,8 @@ p {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 80%;
-        height: 560px;
+        width: 90%;
+        height: 580px;
         background-color: white;
         border: solid 3px rgb(1, 143, 39);
         box-shadow: 2px 4px 4px 0px rgb(1, 143, 39);
