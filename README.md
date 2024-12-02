@@ -5,7 +5,7 @@
 
 <h2>Conteúdo</h2>
 
-<p>O site é composto por 7 telas, sendo elas:</p>
+<p>O site é composto por 6 telas, sendo elas:</p>
 
 <ul>
   <li>Login</li>
@@ -14,7 +14,6 @@
   <li>Adoção</li>
   <li>Clínicas</li>
   <li>Avaliações</li>
-  <li>Conta (Para aparelhos mobile. Em emuladores é representada por um modal.)</li>
 </ul>
 
 <h2> 🚀 Funcionalidades</h2>
@@ -27,7 +26,7 @@ Clínicas: Se o usuário decidir localizar uma clínica, ele entrará nessa pág
 
 Avaliações: Caso o usuário queira deixar seu feedback sobre o site, ele entrará nessa página e adicionara seu nome, email e feedback nos 3 campos que solicitam determinadas informações.<br> 
 
-Além dessas 3 telas, terá mais um modal, onde o usuário poderá acessar as configurações de sua conta, podendo excluir a conta e sair da conta. Ao invés de um modal, para aparelhos mobile foi feita uma tela com as mesmas funções. </p>
+Além dessas 3 telas, terá mais um modal, onde o usuário poderá acessar as configurações de sua conta, podendo excluir a conta e sair da conta.</p>
 
 
 
