@@ -20,34 +20,34 @@
             </div>
 
 
-                <div class="hamburguerMenu" >
-                    <div id="menu">
-                        <div id="menu-bar" onclick="menuOnClick()">
-                          <div id="bar1" class="bar"></div>
-                          <div id="bar2" class="bar"></div>
-                          <div id="bar3" class="bar"></div>
-                        </div>
-                        <nav class="nav" id="nav">
-                          <ul>
+            <div class="hamburguerMenu">
+                <div id="menu">
+                    <div id="menu-bar" onclick="menuOnClick()">
+                        <div id="bar1" class="bar"></div>
+                        <div id="bar2" class="bar"></div>
+                        <div id="bar3" class="bar"></div>
+                    </div>
+                    <nav class="nav" id="nav">
+                        <ul>
                             <li><a href="../html/sobre.html">Sobre</a></li>
                             <li><a href="../html/adocao.html">Adoção</a></li>
                             <li><a href="../html/clinicas.html">Clínicas</a></li>
                             <li><a href="../html/avaliaçoes.html">Avaliações</a></li>
                             <li><a href="../html/conta.html">Conta</a></li>
-                          </ul>
-                        </nav> 
-                      </div>
-                    </div>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
 
         <div class="abas">
-            <img src="../Adocly imagens/WhatsApp_Image_2024-05-11_at_16.55.08-removebg-preview.png" alt=""
-            id="imagem">
+            <img src="../Adocly imagens/WhatsApp_Image_2024-05-11_at_16.55.08-removebg-preview.png" alt="" id="imagem">
             <a href="../html/sobre.html"> <input type="submit" value="Sobre" class="btnAbas"></a>
             <a href="../html/adocao.html"><input type="submit" value="Adoção" class="btnAbas"></a>
             <a href="../html/clinicas.html "> <input type=submit value="Clínicas" class="btnAbas"></a>
             <a href="../html/avaliaçoes.html "><input type="submit" value="Avaliações" class="btnAbas"></a>
-            <button id="btnPerfil" onclick="modalConta()"><img src="../Adocly imagens/Perfil.png" alt="" id="imgPerfil"></button>
+            <button id="btnPerfil" onclick="modalConta()"><img src="../Adocly imagens/Perfil.png" alt=""
+                    id="imgPerfil"></button>
         </div>
 
         <div class="janelaConta" id="janelaConta">
@@ -74,7 +74,7 @@
                 <h3 class="adotado">ADOTADO</h3>
                 <button class="btnInfo btnInfoGeral" id="Turminha" onclick="abrirModal()">Informações</button>
             </div>
-            
+
             <div class="janelaModal janelaModalGeral" id="janelaModal">
                 <div class="modalAnimaisGeral" id="modalAnimais1">
                     <img src="../Adocly imagens/Cachorros/Turminha.jpeg" alt="" class="img-modal">
@@ -122,7 +122,8 @@
                     <div class="info">
                         <h1>Informações</h1>
                         <h2 class="info2">Nome: Indefinido<br> Idade: Indefinido</h2>
-                        <h2 class="info2">Sexo: Marrom 2 Fêmeas, <br>Preto 2 Machos 1 Fêmea<br> Adicional: Sem adicional</h2>
+                        <h2 class="info2">Sexo: Marrom 2 Fêmeas, <br>Preto 2 Machos 1 Fêmea<br> Adicional: Sem adicional
+                        </h2>
                         <h2 class="info2">Instituição: Centro de Zoonose<br> Telefone: (11) 4715-7221</h2>
                         <button class="fecharModalGeral" id="fecharModal3">Sair</button>
                     </div>
@@ -359,21 +360,19 @@
 
     <script>
         const firebaseConfig = {
-          apiKey: "AIzaSyB1zvYFQg0EkG30pzy17YA9UVZ4jUCiYpc",
-          authDomain: "adoclyanimais-8a6d0.firebaseapp.com",
-          databaseURL: "https://adoclyanimais-8a6d0-default-rtdb.firebaseio.com",
-          projectId: "adoclyanimais-8a6d0",
-          storageBucket: "adoclyanimais-8a6d0.appspot.com",
-          messagingSenderId: "122709311228",
-          appId: "1:122709311228:web:6a50080d5601d3be402179",
-          measurementId: "G-CQWMXPYCFN"
-      };
-  
-          firebase.initializeApp(firebaseConfig);
+            apiKey: "AIzaSyB1zvYFQg0EkG30pzy17YA9UVZ4jUCiYpc",
+            authDomain: "adoclyanimais-8a6d0.firebaseapp.com",
+            databaseURL: "https://adoclyanimais-8a6d0-default-rtdb.firebaseio.com",
+            projectId: "adoclyanimais-8a6d0",
+            storageBucket: "adoclyanimais-8a6d0.appspot.com",
+            messagingSenderId: "122709311228",
+            appId: "1:122709311228:web:6a50080d5601d3be402179",
+            measurementId: "G-CQWMXPYCFN"
+        };
 
+        firebase.initializeApp(firebaseConfig);
 
-
-          </script>
+    </script>
 </body>
 
 </html>

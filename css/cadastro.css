@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-image: url(Background\ Adocly.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,7 +14,8 @@ body{
     width: 100%;
     height: 100%;
 }
-.cadastro{
+
+.cadastro {
     box-shadow: 0 4px 8px 0 black;
     border: solid 1.4px black;
     border-radius: 10px;
@@ -31,7 +33,8 @@ body{
     padding: 2%;
 
 }
-.cadastro h2{
+
+.cadastro h2 {
     font-size: 30px;
     font-family: Merriweather;
     color: #9B6847;
@@ -42,20 +45,23 @@ body{
     align-items: center;
     margin-left: 20px;
 }
-.cadastro h2 img{
+
+.cadastro h2 img {
     width: 100px;
     height: 80px;
     margin-bottom: 10px;
     margin-left: 15px;
 }
-.cadastro form{
+
+.cadastro form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2%;
 }
-.emailEsenhaDeco{
+
+.emailEsenhaDeco {
     border: solid 2px #9B6847;
     border-radius: 5px;
     width: 100%;
@@ -66,10 +72,12 @@ body{
     color: #9B6847;
     font-family: Merriweather;
 }
-.emailEsenhaDeco::placeholder{
+
+.emailEsenhaDeco::placeholder {
     color: #9B6847;
 }
-#criar{
+
+#criar {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,19 +95,23 @@ body{
     background-color: #6AB1E4;
     font-family: Merriweather;
 }
-#criar:hover{
+
+#criar:hover {
     color: #9B6847;
     transition: 0.8s;
 }
-.cadastro input{
+
+.cadastro input {
     margin-top: 10px;
 }
-a #voltar{
+
+a #voltar {
     margin-left: 45%;
     height: 30px;
     width: 44%;
 }
-#voltar{
+
+#voltar {
     border: solid 2px #9B6847;
     border-radius: 20px;
     cursor: pointer;
@@ -110,42 +122,48 @@ a #voltar{
     margin-left: 5px;
     margin-top: 30px;
 }
-#voltar:hover{
+
+#voltar:hover {
     background-color: #6AB1E4;
     transition: 0.8s;
     color: white;
     border: none;
 }
 
-@media (min-width: 360px) and (max-width: 430px){
-    
-    body{
+@media (min-width: 360px) and (max-width: 430px) {
+
+    body {
         background-image: url(Background\ Adocly.png);
         background-size: cover;
         display: flex;
         width: 100vw;
         height: 100vh;
     }
-    .cadastro{
+
+    .cadastro {
         width: 295px;
         height: 360px;
         font-size: 30px;
         margin: auto;
         padding: 2.8%;
-    
+
     }
-    .cadastro h2{
+
+    .cadastro h2 {
         font-size: 90%;
         margin-top: none;
     }
-    .cadastro h2 img{
+
+    .cadastro h2 img {
         width: 40%;
         height: 40%;
     }
-    h2{
+
+    h2 {
         margin-right: 10px;
     }
-    #voltar{
+
+    #voltar {
         font-size: 12px;
         height: 30px;
         width: 40%;

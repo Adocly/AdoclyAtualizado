@@ -2,110 +2,112 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adocly Animais</title>
-    <link rel="stylesheet" href="../css/avaliaçoes.css">
-    <script src="../js/avaliacoes.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adocly Animais</title>
+  <link rel="stylesheet" href="../css/avaliaçoes.css">
+  <script src="../js/avaliacoes.js" defer></script>
 </head>
 
 <body>
-    <div class="navegacao">
-        <div id="img-adocly">
-            <img src="../Adocly imagens/WhatsApp_Image_2024-05-11_at_16.55.08-removebg-preview.png" alt=""
-                id="imagem">
-            <h2>Adocly <br>Animais</h2>
-        </div>
-
-            <div class="hamburguerMenu" >
-                <div id="menu">
-                    <div id="menu-bar" onclick="menuOnClick()">
-                      <div id="bar1" class="bar"></div>
-                      <div id="bar2" class="bar"></div>
-                      <div id="bar3" class="bar"></div>
-                    </div>
-                    <nav class="nav" id="nav">
-                      <ul>
-                        <li><a href="../html/sobre.html">Sobre</a></li>
-                        <li><a href="../html/adocao.html">Adoção</a></li>
-                        <li><a href="../html/clinicas.html">Clínicas</a></li>
-                        <li><a href="../html/avaliaçoes.html">Avaliações</a></li>
-                        <li><a href="../html/conta.html">Conta</a></li>
-                      </ul>
-                    </nav> 
-                  </div>
-                </div>
-
+  <div class="navegacao">
+    <div id="img-adocly">
+      <img src="../Adocly imagens/WhatsApp_Image_2024-05-11_at_16.55.08-removebg-preview.png" alt="" id="imagem">
+      <h2>Adocly <br>Animais</h2>
     </div>
-    <div class="abas">
-      <img src="../Adocly imagens/WhatsApp_Image_2024-05-11_at_16.55.08-removebg-preview.png" alt=""
-      id="imagem">
-      <a href="../html/sobre.html"> <input type="submit" value="Sobre" class="btnAbas"></a>
-      <a href="../html/adocao.html"><input type="submit" value="Adoção" class="btnAbas"></a>
-      <a href="../html/clinicas.html "> <input type=submit value="Clínicas" class="btnAbas"></a>
-      <a href="../html/avaliaçoes.html "><input type="submit" value="Avaliações" class="btnAbas"></a>
-      <button id="btnPerfil" onclick="modalConta()"><img src="../Adocly imagens/Perfil.png" alt="" id="imgPerfil"></button>
+
+    <div class="hamburguerMenu">
+      <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <nav class="nav" id="nav">
+          <ul>
+            <li><a href="../html/sobre.html">Sobre</a></li>
+            <li><a href="../html/adocao.html">Adoção</a></li>
+            <li><a href="../html/clinicas.html">Clínicas</a></li>
+            <li><a href="../html/avaliaçoes.html">Avaliações</a></li>
+            <li><a href="../html/conta.html">Conta</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="abas">
+    <img src="../Adocly imagens/WhatsApp_Image_2024-05-11_at_16.55.08-removebg-preview.png" alt="" id="imagem">
+    <a href="../html/sobre.html"> <input type="submit" value="Sobre" class="btnAbas"></a>
+    <a href="../html/adocao.html"><input type="submit" value="Adoção" class="btnAbas"></a>
+    <a href="../html/clinicas.html "> <input type=submit value="Clínicas" class="btnAbas"></a>
+    <a href="../html/avaliaçoes.html "><input type="submit" value="Avaliações" class="btnAbas"></a>
+    <button id="btnPerfil" onclick="modalConta()"><img src="../Adocly imagens/Perfil.png" alt=""
+        id="imgPerfil"></button>
   </div>
 
   <div class="janelaConta" id="janelaConta">
-      <div id="modalConta">
-          <div class="infoConta">
-              <h1 id="info">Informações da conta</h1>
-              <h4 class="emailContaGeral">Email:</h4>
-              <h4 class="emailContaGeral" id="emailConta2"></h4>
-              <button class="sairEexcluirConta" id="sairConta" onclick="logout()">Sair da conta</button>
-              <button class="sairEexcluirConta" id="excluirConta">Excluir conta</button>
-              <button class="fecharModalGeral" id="fecharModal">Sair</button>
-          </div>
+    <div id="modalConta">
+      <div class="infoConta">
+        <h1 id="info">Informações da conta</h1>
+        <h4 class="emailContaGeral">Email:</h4>
+        <h4 class="emailContaGeral" id="emailConta2"></h4>
+        <button class="sairEexcluirConta" id="sairConta" onclick="logout()">Sair da conta</button>
+        <button class="sairEexcluirConta" id="excluirConta">Excluir conta</button>
+        <button class="fecharModalGeral" id="fecharModal">Sair</button>
       </div>
+    </div>
   </div>
 
-    <div class="centralizar">
+  <div class="centralizar">
     <form action="https://formsubmit.co/adoclyanimais2024@gmail.com" method="POST">
-        <h1>O que achou do site? Achou algum problema? <br>Nos envie um feedback!</h1>
-        <input type="text" name="nome" placeholder="Digite seu nome:" class="nomeEmail" id="nome" required>
-        <input type="email" name="email" placeholder="Digite seu email:" class="nomeEmail" id="email" required>
-        <textarea cols="30" rows="10" name="mensagem" placeholder="Digite seu feedback Aqui!:" id="mensagem" required></textarea>
+      <h1>O que achou do site? Achou algum problema? <br>Nos envie um feedback!</h1>
+      <input type="text" name="nome" placeholder="Digite seu nome:" class="nomeEmail" id="nome" required>
+      <input type="email" name="email" placeholder="Digite seu email:" class="nomeEmail" id="email" required>
+      <textarea cols="30" rows="10" name="mensagem" placeholder="Digite seu feedback Aqui!:" id="mensagem"
+        required></textarea>
 
-        <button type="submit" id="btnEnviar">Enviar</button>
+      <button type="submit" id="btnEnviar">Enviar</button>
 
-        <input type="hidden" name="_subject" value="Nova mensagem!">
-        <input type="text" name="_honey" style="display:none">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://adocly.github.io/AdoclyAtualizado/html/avaliaçoes.html" id="enviado">
+      <input type="hidden" name="_subject" value="Nova mensagem!">
+      <input type="text" name="_honey" style="display:none">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://adocly.github.io/AdoclyAtualizado/html/avaliaçoes.html"
+        id="enviado">
     </form>
-    </div>
+  </div>
 
-    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-auth-compat.js"></script>
 
-    <script>
-        const firebaseConfig = {
-          apiKey: "AIzaSyB1zvYFQg0EkG30pzy17YA9UVZ4jUCiYpc",
-          authDomain: "adoclyanimais-8a6d0.firebaseapp.com",
-          databaseURL: "https://adoclyanimais-8a6d0-default-rtdb.firebaseio.com",
-          projectId: "adoclyanimais-8a6d0",
-          storageBucket: "adoclyanimais-8a6d0.appspot.com",
-          messagingSenderId: "122709311228",
-          appId: "1:122709311228:web:6a50080d5601d3be402179",
-          measurementId: "G-CQWMXPYCFN"
-      };
-  
-          firebase.initializeApp(firebaseConfig);
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyB1zvYFQg0EkG30pzy17YA9UVZ4jUCiYpc",
+      authDomain: "adoclyanimais-8a6d0.firebaseapp.com",
+      databaseURL: "https://adoclyanimais-8a6d0-default-rtdb.firebaseio.com",
+      projectId: "adoclyanimais-8a6d0",
+      storageBucket: "adoclyanimais-8a6d0.appspot.com",
+      messagingSenderId: "122709311228",
+      appId: "1:122709311228:web:6a50080d5601d3be402179",
+      measurementId: "G-CQWMXPYCFN"
+    };
 
-          function logout(){
-            firebase.auth().signOut().then(() => {
-                alert("Conta deslogada com sucesso!")
-                window.location.href = "../index.html"
-                history.replaceState(null, "", "../index.html")
-                        }).catch(() => {
-                alert("Erro ao sair da conta.")
-            })
-          }
-          
-          </script>
+    firebase.initializeApp(firebaseConfig);
+
+    function logout() {
+      firebase.auth().signOut().then(() => {
+        alert("Conta deslogada com sucesso!")
+        window.location.href = "../index.html"
+        history.replaceState(null, "", "../index.html")
+      }).catch(() => {
+        alert("Erro ao sair da conta.")
+      })
+    }
+
+  </script>
 </body>
 
 </html>

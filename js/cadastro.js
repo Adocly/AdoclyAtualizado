@@ -1,13 +1,13 @@
-document.getElementById('criar').addEventListener('click', function() {
+document.getElementById('criar').addEventListener('click', function () {
   const email = document.getElementById('email').value;
   const senha = document.getElementById('senha').value;
 
-firebase.auth().createUserWithEmailAndPassword(email, senha)
-.then((userCredential) => {
-    alert("Cadastro realizado com sucesso! Bem-vindo, " + email);
-    window.location.href = "./sobre.html"
-})
-.catch((error) => {
-    alert("Erro ao cadastrar: " + error.message);
-});
+  firebase.auth().createUserWithEmailAndPassword(email, senha)
+    .then((userCredential) => {
+      alert("Cadastro realizado com sucesso! Bem-vindo, " + email);
+      window.location.href = "./sobre.html"
+    })
+    .catch((error) => {
+      alert("Erro ao cadastrar: " + error.message);
+    });
 });

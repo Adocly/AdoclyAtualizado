@@ -1,38 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-image: url(./Tela\ verde.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height:100%;
+    height: 100%;
     overflow-x: hidden;
 }
-.navegacao{
+
+.navegacao {
     display: none;
 }
-.abas{
+
+.abas {
     display: flex;
     justify-content: space-around;
-    background-image:url("./Branco2.png");
+    background-image: url("./Branco2.png");
     background-repeat: no-repeat;
     background-size: cover;
     border: solid 2px black;
     width: 100%;
     height: 110px;
 }
-#imagem{
+
+#imagem {
     width: 100px;
     height: 100px;
     margin-left: 180px;
 }
-.btnAbas{
-    background-color: white ;
+
+.btnAbas {
+    background-color: white;
     width: 240px;
     height: 80px;
     margin-top: 6%;
@@ -41,11 +46,13 @@ body{
     font-family: Merriweather;
     cursor: pointer;
 }
-.btnAbas:hover{
+
+.btnAbas:hover {
     color: #9B6847;
     transition: 0.8s;
 }
-#btnPerfil{
+
+#btnPerfil {
     width: 55px;
     height: 55px;
     border-radius: 50%;
@@ -55,11 +62,13 @@ body{
     border: none;
     cursor: pointer;
 }
-#imgPerfil{
+
+#imgPerfil {
     width: 55px;
     height: 55px;
 }
-.janelaConta{
+
+.janelaConta {
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -73,7 +82,8 @@ body{
     z-index: 999;
     padding: 0;
 }
-#modalConta{
+
+#modalConta {
     position: fixed;
     width: 500px;
     height: 600px;
@@ -83,13 +93,15 @@ body{
     border-radius: 20px;
     display: flex;
     justify-content: space-evenly;
-    align-items: center; 
+    align-items: center;
 }
-.janelaConta.abrir{
+
+.janelaConta.abrir {
     position: fixed;
-    display: flex;  
+    display: flex;
 }
-#fecharModal{
+
+#fecharModal {
     width: 200px;
     height: 30px;
     border-radius: 20px;
@@ -101,22 +113,26 @@ body{
     margin-top: 5%;
     cursor: pointer;
 }
-#fecharModal:hover{
+
+#fecharModal:hover {
     color: #9B6847;
     transition: 0.8s;
 }
-.infoConta{
+
+.infoConta {
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 20px;
 }
-#info{
+
+#info {
     font-family: Merriweather;
     font-size: 30px;
     color: #9B6847;
 }
-.sairEexcluirConta{
+
+.sairEexcluirConta {
     width: 200px;
     height: 25px;
     font-family: Merriweather;
@@ -125,38 +141,46 @@ body{
     background-color: #6AB1E4;
     color: white;
     cursor: pointer;
-    border: none; 
+    border: none;
 }
-#sairConta:hover{
+
+#sairConta:hover {
     color: #9B6847;
     transition: 0.8s;
 }
-#excluirConta:hover{
+
+#excluirConta:hover {
     color: #c91b1b;
     transition: 0.8s;
 }
-.emailContaGeral{
+
+.emailContaGeral {
     color: #9B6847;
     text-align: center;
     font-size: 20px;
     border: none;
     font-family: Merriweather;
 }
-.hamburguerMenu{
+
+.hamburguerMenu {
     display: none;
 }
-#adoclyH2{
+
+#adoclyH2 {
     display: none;
 }
-#menu-icon{
+
+#menu-icon {
     display: none;
 }
-.centralizar{
+
+.centralizar {
     display: flex;
     justify-content: center;
     margin-top: 6%;
 }
-.card-endereco{
+
+.card-endereco {
     border: solid 3px rgb(1, 143, 39);
     box-shadow: 2px 4px 4px 0px rgb(1, 143, 39);
     border-radius: 10px;
@@ -164,7 +188,8 @@ body{
     width: 1000px;
     height: 580px;
 }
-#procurar{
+
+#procurar {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -173,7 +198,8 @@ body{
     color: #9B6847;
     margin-top: 3%;
 }
-.googleMaps{
+
+.googleMaps {
     border: solid 2px rgb(1, 143, 39);
     border-radius: 8px;
     width: 904px;
@@ -181,12 +207,14 @@ body{
     margin-top: 2%;
     margin-left: 4.5%;
 }
-#googleMaps{
+
+#googleMaps {
     border-radius: 8px;
     width: 900px;
     height: 400px;
 }
-form{
+
+form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,46 +223,48 @@ form{
     gap: 20px;
     padding: 2%;
 }
-#img-adocly{
+
+#img-adocly {
     width: 100%;
     height: 100%;
     display: flex;
-    align-items:center;
+    align-items: center;
 }
 
-@media (min-width: 360px) and (max-width: 430px){
+@media (min-width: 360px) and (max-width: 430px) {
 
-    .hamburguerMenu{
+    .hamburguerMenu {
         background-color: white;
         display: flex;
     }
+
     #menu {
         z-index: 3;
-      }
+    }
 
     #menu-bar {
-      width: 35px;
-      height: 40px;
-      margin: 30px 0 20px 20px;
-      cursor: pointer;
+        width: 35px;
+        height: 40px;
+        margin: 30px 0 20px 20px;
+        cursor: pointer;
     }
-    
+
     .bar {
-      height: 4px;
-      width: 80%;
-      background-color: #000000;
-      display: flex;
-      transition: 0.3s ease;
+        height: 4px;
+        width: 80%;
+        background-color: #000000;
+        display: flex;
+        transition: 0.3s ease;
     }
-    
+
     #bar1 {
-      transform: translateY(-4px);
+        transform: translateY(-4px);
     }
-    
+
     #bar3 {
-      transform: translateY(4px);
+        transform: translateY(4px);
     }
-    
+
     .nav {
         background-color: rgb(1, 143, 39);
         transition: 0.3s ease;
@@ -243,119 +273,130 @@ form{
         right: 0%;
         height: 100.8%;
         top: -0.5px;
-      }
-    
+    }
+
     .nav ul {
-      padding: 0 22px;
-      margin-top: 50%;
+        padding: 0 22px;
+        margin-top: 50%;
     }
-    
+
     .nav li {
-      list-style: none;
-      padding: 12px 0;
+        list-style: none;
+        padding: 12px 0;
     }
-    
+
     .nav li a {
-      font-family: Merriweather;
-      color: white;
-      font-size: 20px;
-      text-decoration: none;
+        font-family: Merriweather;
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
     }
-    
+
     .nav li a:hover {
-      font-weight: bold;
+        font-weight: bold;
     }
-    
-    .menu-bg, #menu {
-      top: -5px;
-      left: 82%;
-      position: absolute;
-      height: 100%;
+
+    .menu-bg,
+    #menu {
+        top: -5px;
+        left: 82%;
+        position: absolute;
+        height: 100%;
     }
-    
+
     .menu-bg {
-      z-index: 1;
-      width: 50px;
-      height: 0;
-      background-color: white;
-      margin: 30px 0 20px 20px;
-      transition: 0.3s ease;
+        z-index: 1;
+        width: 50px;
+        height: 0;
+        background-color: white;
+        margin: 30px 0 20px 20px;
+        transition: 0.3s ease;
     }
-    
+
     .change {
-      display: block;
+        display: block;
     }
-    
+
     .change .bar {
-      background-color: black;
+        background-color: black;
     }
-    
+
     .change #bar1 {
-      transform: translateY(4px) rotateZ(-45deg);
+        transform: translateY(4px) rotateZ(-45deg);
     }
-    
+
     .change #bar2 {
-      opacity: 0;
+        opacity: 0;
     }
-    
+
     .change #bar3 {
-      transform: translateY(-6px) rotateZ(45deg);
+        transform: translateY(-6px) rotateZ(45deg);
     }
-    
+
     .change-bg {
-      width: 520px;
-      height: 460px;
-      transform: translate(-60%,-30%);
+        width: 520px;
+        height: 460px;
+        transform: translate(-60%, -30%);
     }
-    body{   
+
+    body {
         background-image: url(Tela\ verde.png);
         background-size: cover;
         width: 100vw;
         height: 100vh;
-     }
-    .navegacao{
+    }
+
+    .navegacao {
         background-image: none;
         background-color: white;
         border: solid 2px black;
         width: 100vw;
         height: 60px;
         display: flex;
-        align-items:flex-start;
+        align-items: flex-start;
         justify-content: space-between;
     }
-    #imagem{
+
+    #imagem {
         width: 50px;
         height: 50px;
         margin-left: 0px;
-   
+
     }
-    #adoclyH2{
+
+    #adoclyH2 {
         display: flex;
         font-family: Merriweather;
         font-size: 15px;
         text-align: center;
         color: #9B6847;
     }
-    #menu-icon{
+
+    #menu-icon {
         width: 50px;
         height: 50px;
         display: flex;
     }
-    .abas{
+
+    .abas {
         display: none;
     }
-    #procurar{
+
+    #procurar {
         font-size: 20px;
     }
-    .card-endereco{
+
+    .card-endereco {
         width: 90%;
         height: -100%;
     }
-    .googleMaps{
+
+    .googleMaps {
         width: 90%;
         height: 82%;
     }
-    #googleMaps{
+
+    #googleMaps {
         width: 100%;
         height: 100%;
     }

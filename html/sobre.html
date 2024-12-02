@@ -11,85 +11,85 @@
 
 <body>
 
-        <div class="navegacao">
-            <div id="img-adocly">
-                <img src="../Adocly imagens/WhatsApp_Image_2024-05-11_at_16.55.08-removebg-preview.png" alt=""
-                    id="imagem">
-                <h2>Adocly <br>Animais</h2>
-            </div>
-
-                <div class="hamburguerMenu" >
-                    <div id="menu">
-                        <div id="menu-bar" onclick="menuOnClick()">
-                          <div id="bar1" class="bar"></div>
-                          <div id="bar2" class="bar"></div>
-                          <div id="bar3" class="bar"></div>
-                        </div>
-                        <nav class="nav" id="nav">
-                          <ul>
-                            <li><a href="../html/sobre.html">Sobre</a></li>
-                            <li><a href="../html/adocao.html">Adoção</a></li>
-                            <li><a href="../html/clinicas.html">Clínicas</a></li>
-                            <li><a href="../html/avaliaçoes.html">Avaliações</a></li>
-                            <li><a href="../html/conta.html">Conta</a></li>
-                          </ul>
-                        </nav> 
-                      </div>
-                    </div>
-
+    <div class="navegacao">
+        <div id="img-adocly">
+            <img src="../Adocly imagens/WhatsApp_Image_2024-05-11_at_16.55.08-removebg-preview.png" alt="" id="imagem">
+            <h2>Adocly <br>Animais</h2>
         </div>
 
-        <div class="abas">
-            <img src="../Adocly imagens/WhatsApp_Image_2024-05-11_at_16.55.08-removebg-preview.png" alt=""
-            id="imagem">
-            <a href="../html/sobre.html"> <input type="submit" value="Sobre" class="btnAbas"></a>
-            <a href="../html/adocao.html"><input type="submit" value="Adoção" class="btnAbas"></a>
-            <a href="../html/clinicas.html "> <input type=submit value="Clínicas" class="btnAbas"></a>
-            <a href="../html/avaliaçoes.html "><input type="submit" value="Avaliações" class="btnAbas"></a>
-            <button id="btnPerfil" onclick="modalConta()"><img src="../Adocly imagens/Perfil.png" alt="" id="imgPerfil"></button>
-        </div>
-
-        <div class="janelaConta" id="janelaConta">
-            <div id="modalConta">
-                <div class="infoConta">
-                    <h1 id="info">Informações da conta</h1>
-                    <h4>Email:</h4>
-                    <h4 id="emailConta"></h4>
-                    <button class="sairEexcluirConta" id="sairConta" onclick="logout()">Sair da conta</button>
-                    <button class="sairEexcluirConta" id="excluirConta">Excluir conta</button>
-                    <button id="fecharModal">Sair</button>
+        <div class="hamburguerMenu">
+            <div id="menu">
+                <div id="menu-bar" onclick="menuOnClick()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
                 </div>
+                <nav class="nav" id="nav">
+                    <ul>
+                        <li><a href="../html/sobre.html">Sobre</a></li>
+                        <li><a href="../html/adocao.html">Adoção</a></li>
+                        <li><a href="../html/clinicas.html">Clínicas</a></li>
+                        <li><a href="../html/avaliaçoes.html">Avaliações</a></li>
+                        <li><a href="../html/conta.html">Conta</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
 
-        <div id="cards">
-            <div class="card-sobre">
-                <div class="card-sobre2">
-                    <h3>Sobre</h3> <br>
-                    <p class="aparecerParaCelular">Aperte nas 3 barras no canto superior direito.</p>
+    </div>
 
-                    <h4>Este site tem como objetivo principal a adoção de animais e localização de clínicas veterinárias
-                        mais próximas. <br>
+    <div class="abas">
+        <img src="../Adocly imagens/WhatsApp_Image_2024-05-11_at_16.55.08-removebg-preview.png" alt="" id="imagem">
+        <a href="../html/sobre.html"> <input type="submit" value="Sobre" class="btnAbas"></a>
+        <a href="../html/adocao.html"><input type="submit" value="Adoção" class="btnAbas"></a>
+        <a href="../html/clinicas.html "> <input type=submit value="Clínicas" class="btnAbas"></a>
+        <a href="../html/avaliaçoes.html "><input type="submit" value="Avaliações" class="btnAbas"></a>
+        <button id="btnPerfil" onclick="modalConta()"><img src="../Adocly imagens/Perfil.png" alt=""
+                id="imgPerfil"></button>
+    </div>
 
-                        <br>Adoção: Caso sua decisão seja adotar um animal, aperte no botão escrito "Adoção", onde
-                        será direcionado para a tela de adoção.
-                        Escolha seu melhor amigo e aperte no botão "Mais informações" e verá as informações do animal.
-                        Ligue para o número do abrigo e dê as informações solicitadas para realizar a adoção. <br>
+    <div class="janelaConta" id="janelaConta">
+        <div id="modalConta">
+            <div class="infoConta">
+                <h1 id="info">Informações da conta</h1>
+                <h4>Email:</h4>
+                <h4 id="emailConta"></h4>
+                <button class="sairEexcluirConta" id="sairConta" onclick="logout()">Sair da conta</button>
+                <button class="sairEexcluirConta" id="excluirConta">Excluir conta</button>
+                <button id="fecharModal">Sair</button>
+            </div>
+        </div>
+    </div>
 
-                        <br>Clínicas veterinárias: Caso sua decisão seja localizar uma clínica que esteja próxima a
-                        você, aperte no botão "Clínicas" e procure pela clínica no mapa. Se preferir, pode apertar
-                        no botão localizado no canto superior esquerdo do mapa escrito "Ver mapa maior", levando 
-                        você até o Google Maps, podendo colocar o nome da clínica que deseja encontrar.<br>
+    <div id="cards">
+        <div class="card-sobre">
+            <div class="card-sobre2">
+                <h3>Sobre</h3> <br>
+                <p class="aparecerParaCelular">Aperte nas 3 barras no canto superior direito.</p>
 
-                        <br>Avaliações: Se quiser deixar seu feedback em relação ao site, aperte no botão "Avaliações". Ao apertar
-                        no botão, verá 3 campos de texto. Coloque as informações solicitadas e nos envie o comentário.
-                    </h4> <br>
-                    <p >Encontre seu melhor amigo!</p>
-                </div>
+                <h4>Este site tem como objetivo principal a adoção de animais e localização de clínicas veterinárias
+                    mais próximas. <br>
 
+                    <br>Adoção: Caso sua decisão seja adotar um animal, aperte no botão escrito "Adoção", onde
+                    será direcionado para a tela de adoção.
+                    Escolha seu melhor amigo e aperte no botão "Mais informações" e verá as informações do animal.
+                    Ligue para o número do abrigo e dê as informações solicitadas para realizar a adoção. <br>
+
+                    <br>Clínicas veterinárias: Caso sua decisão seja localizar uma clínica que esteja próxima a
+                    você, aperte no botão "Clínicas" e procure pela clínica no mapa. Se preferir, pode apertar
+                    no botão localizado no canto superior esquerdo do mapa escrito "Ver mapa maior", levando
+                    você até o Google Maps, podendo colocar o nome da clínica que deseja encontrar.<br>
+
+                    <br>Avaliações: Se quiser deixar seu feedback em relação ao site, aperte no botão "Avaliações". Ao
+                    apertar
+                    no botão, verá 3 campos de texto. Coloque as informações solicitadas e nos envie o comentário.
+                </h4> <br>
+                <p>Encontre seu melhor amigo!</p>
             </div>
 
         </div>
+
+    </div>
 
     <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
@@ -99,20 +99,20 @@
     <script>
 
         const firebaseConfig = {
-          apiKey: "AIzaSyB1zvYFQg0EkG30pzy17YA9UVZ4jUCiYpc",
-          authDomain: "adoclyanimais-8a6d0.firebaseapp.com",
-          databaseURL: "https://adoclyanimais-8a6d0-default-rtdb.firebaseio.com",
-          projectId: "adoclyanimais-8a6d0",
-          storageBucket: "adoclyanimais-8a6d0.appspot.com",
-          messagingSenderId: "122709311228",
-          appId: "1:122709311228:web:6a50080d5601d3be402179",
-          measurementId: "G-CQWMXPYCFN"
-      };
-  
-          firebase.initializeApp(firebaseConfig);
-          
+            apiKey: "AIzaSyB1zvYFQg0EkG30pzy17YA9UVZ4jUCiYpc",
+            authDomain: "adoclyanimais-8a6d0.firebaseapp.com",
+            databaseURL: "https://adoclyanimais-8a6d0-default-rtdb.firebaseio.com",
+            projectId: "adoclyanimais-8a6d0",
+            storageBucket: "adoclyanimais-8a6d0.appspot.com",
+            messagingSenderId: "122709311228",
+            appId: "1:122709311228:web:6a50080d5601d3be402179",
+            measurementId: "G-CQWMXPYCFN"
+        };
 
-          </script>
+        firebase.initializeApp(firebaseConfig);
+
+
+    </script>
 </body>
 
 </html>
