@@ -66,8 +66,7 @@ Adocly <br>
 │   └── Gatos<br>
 ├──  css <br>
 ├── html <br>
-├──  js  <br>
-└── README.md
+└── js
 
 
 
