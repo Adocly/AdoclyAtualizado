@@ -563,4 +563,19 @@ h1 {
     .info2 {
         font-size: 16px;
     }
+    #modalConta {
+        width: 90%;
+        height: 60%;
+    }
+    #info {
+        text-align: center;
+        font-family: Merriweather;
+        font-size: 20px;
+        color: #9B6847;
+    }
+    .emailContaGeral{
+        font-size: 15px;
+        font-family: Merriweather;
+        color: #9B6847;
+    }
 }

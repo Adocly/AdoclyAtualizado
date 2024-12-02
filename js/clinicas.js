@@ -20,9 +20,20 @@ document.getElementById('btnPerfil').addEventListener('click', () => {
     const user = auth.currentUser;
 
     if (user) {
-        document.getElementById('emailConta2').textContent = user.email;
+        document.getElementById('emailConta2').innerHTML = user.email;
     } else {
-        document.getElementById('emailConta2').textContent =
+        document.getElementById('emailConta2').innerHTML =
+            'Erro: Nenhum usuário logado.';
+    }
+});
+
+document.getElementById('btnPerfilRespon').addEventListener('click', () => {
+    const user = firebase.auth().currentUser;
+
+    if (user) {
+        document.getElementById('emailConta2').innerHTML = user.email;
+    } else {
+        document.getElementById('emailConta2').innerHTML =
             'Erro: Nenhum usuário logado.';
     }
 });

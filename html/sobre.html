@@ -30,7 +30,7 @@
                         <li><a href="../html/adocao.html">Adoção</a></li>
                         <li><a href="../html/clinicas.html">Clínicas</a></li>
                         <li><a href="../html/avaliaçoes.html">Avaliações</a></li>
-                        <li><a href="../html/conta.html">Conta</a></li>
+                        <li><a href="#" id="btnPerfilRespon" onclick="modalConta()">Conta</a></li>
                     </ul>
                 </nav>
             </div>
@@ -52,11 +52,11 @@
         <div id="modalConta">
             <div class="infoConta">
                 <h1 id="info">Informações da conta</h1>
-                <h4>Email:</h4>
-                <h4 id="emailConta"></h4>
+                <h4 class="emailContaGeral">Email:</h4>
+                <h4 class="emailContaGeral" id="emailConta"></h4>
                 <button class="sairEexcluirConta" id="sairConta" onclick="logout()">Sair da conta</button>
                 <button class="sairEexcluirConta" id="excluirConta">Excluir conta</button>
-                <button id="fecharModal">Sair</button>
+                <button id="fecharModal">Voltar</button>
             </div>
         </div>
     </div>
@@ -67,7 +67,7 @@
                 <h3>Sobre</h3> <br>
                 <p class="aparecerParaCelular">Aperte nas 3 barras no canto superior direito.</p>
 
-                <h4>Este site tem como objetivo principal a adoção de animais e localização de clínicas veterinárias
+                <h4 id="textoSobre">Este site tem como objetivo principal a adoção de animais e localização de clínicas veterinárias
                     mais próximas. <br>
 
                     <br>Adoção: Caso sua decisão seja adotar um animal, aperte no botão escrito "Adoção", onde

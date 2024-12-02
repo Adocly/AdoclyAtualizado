@@ -19,9 +19,9 @@ document.getElementById('btnPerfil').addEventListener('click', () => {
     const user = auth.currentUser;
 
     if (user) {
-        document.getElementById('emailConta').textContent = user.email;
+        document.getElementById('emailConta').innerHTML = user.email;
     } else {
-        document.getElementById('emailConta').textContent =
+        document.getElementById('emailConta').innerHTML =
             'Erro: Nenhum usuário logado.';
     }
 });

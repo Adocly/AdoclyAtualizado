@@ -28,12 +28,23 @@ function logout() {
 
 const auth = firebase.auth();
 document.getElementById('btnPerfil').addEventListener('click', () => {
-    const user = auth.currentUser;
+    const user = firebase.auth().currentUser;
 
     if (user) {
-        document.getElementById('emailConta').textContent = user.email;
+        document.getElementById('emailConta').innerHTML = user.email;
     } else {
-        document.getElementById('emailConta').textContent =
+        document.getElementById('emailConta').innerHTML =
+            'Erro: Nenhum usuário logado.';
+    }
+});
+
+document.getElementById('btnPerfilRespon').addEventListener('click', () => {
+    const user = firebase.auth().currentUser;
+
+    if (user) {
+        document.getElementById('emailConta').innerHTML = user.email;
+    } else {
+        document.getElementById('emailConta').innerHTML =
             'Erro: Nenhum usuário logado.';
     }
 });
