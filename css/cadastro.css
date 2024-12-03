@@ -13,6 +13,7 @@ body {
     background-position: cover;
     width: 100%;
     height: 100%;
+    display: flex;
 }
 
 .cadastro {
@@ -77,10 +78,19 @@ body {
     color: #9B6847;
 }
 
+#senha{
+    position: relative;
+}
+
+.bi{
+    position: absolute;
+    margin-top: -34.5px;
+    margin-left: 220px;
+    color: #9B6847;
+    cursor: pointer;
+}
+
 #criar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 20px;
     border: none;
     font-size: 15px;
@@ -161,6 +171,11 @@ a #voltar {
 
     h2 {
         margin-right: 10px;
+    }
+
+    .bi{
+        margin-top: -34px;
+        margin-left: 230px;
     }
 
     #voltar {

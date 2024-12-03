@@ -78,6 +78,18 @@ body {
     color: #9B6847;
 }
 
+#senha{
+    position: relative;
+}
+
+.bi{
+    position: absolute;
+    margin-top: 16px;
+    margin-left: 200px;
+    color: #9B6847;
+    cursor: pointer;
+}
+
 #login {
     display: flex;
     justify-content: center;
