@@ -5,6 +5,12 @@ function menuOnClick() {
     document.getElementById("menu-bg").classList.toggle("change-bg");
 }
 
+function fecharMenu(){
+    document.getElementById("menu-bar").classList.remove("change");
+    document.getElementById("nav").classList.remove("change");
+    document.getElementById("menu-bg").classList.remove("change-bg");
+}
+
 function modalConta() {
     const modal = document.getElementById('janelaConta');
     modal.classList.add('abrir');

@@ -250,6 +250,9 @@ h2 {
     display: flex;
     align-items: center;
 }
+#btnX{
+    display: none;
+}
 
 @media (min-width: 360px) and (max-width: 430px) {
 
@@ -341,22 +344,14 @@ h2 {
         background-color: black;
     }
 
-    .change #bar1 {
-        transform: translateY(4px) rotateZ(-45deg);
-    }
-
-    .change #bar2 {
-        opacity: 0;
-    }
-
-    .change #bar3 {
-        transform: translateY(-6px) rotateZ(45deg);
-    }
-
-    .change-bg {
-        width: 520px;
-        height: 460px;
-        transform: translate(-60%, -30%);
+    #btnX{
+        display: block;
+        color: white;
+        font-size: 30px;
+        background-color: rgb(1, 143, 39);
+        border: none;
+        margin-top: -60%;
+        margin-left: 80px;
     }
 
     body {
