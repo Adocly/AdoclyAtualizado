@@ -453,10 +453,6 @@ h1 {
         background-color: black;
     }
 
-    .change #bar1 {
-        transform: translateY(4px) rotateZ(-45deg);
-    }
-
     #btnX{
         display: block;
         color: white;
