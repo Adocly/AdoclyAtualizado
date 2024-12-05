@@ -232,6 +232,9 @@ h1{
 .infoClinica{
     display: flex;
     flex-direction: column;
+    font-size: 13px;
+    margin-bottom: 3%;
+    gap: 1px;
 }
 
 h3{
@@ -250,7 +253,7 @@ p{
 a{
     text-align: center;
     font-family: Merriweather;
-    color: #090b6c;
+    color:  rgb(1, 143, 39);
 }
 
 .hamburguerMenu {
@@ -323,6 +326,12 @@ form {
 }
 #btnX{
     display: none;
+}
+#teleclinicas{
+    text-align: center;
+    font-family: Merriweather;
+    color: #000000;
+    font-size: 12px;
 }
 
 @media (min-width: 360px) and (max-width: 430px) {
