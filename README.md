@@ -63,10 +63,17 @@ Além dessas 3 telas, terá mais um modal, onde o usuário poderá acessar as co
 Adocly <br>
 ├──Adocly imagens<br>
 │   ├── Cachorros<br>
+│   ├── Clínicas<br>
 │   └── Gatos<br>
 ├──  css <br>
 ├── html <br>
 └── js
+
+<h2> 📜 Licença para manuseio de Devs</h2>
+
+<ul>
+  <li>Apenas para fins de inspiração.</li>
+</ul>
 
 
 
