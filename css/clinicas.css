@@ -162,6 +162,96 @@ body {
     font-family: Merriweather;
 }
 
+.centralizar {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+h1{
+    font-family: Merriweather;
+    font-size: 25px;
+    color: rgb(1, 143, 39);
+}
+
+.btnCidades{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.centralizar2{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.btnAMS{
+    width: 30%;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: #6AB1E4;
+    color: white;
+    font-family: Merriweather;
+    font-size: 18px;
+}
+
+.btnAMS:hover{
+    color: #9B6847;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.arrumandoAMS{
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 480px;
+    gap: 20px;
+    margin-top: 50px;
+    margin-left: 085px;
+}
+.card{
+    border: solid 3px rgb(1, 143, 39);
+    box-shadow: 2px 4px 4px 0px rgb(1, 143, 39);
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 450px;
+}
+
+.imgClinica{
+    width: 100%;
+    height: 350px;
+    border-radius: 17px;
+}
+
+.infoClinica{
+    display: flex;
+    flex-direction: column;
+}
+
+h3{
+    text-align: center;
+    font-family: Merriweather;
+    color: #9B6847;
+}
+
+p{
+    text-align: center;
+    font-family: Merriweather;
+    color: #9B6847;
+    font-size: 15px;
+}
+
+a{
+    text-align: center;
+    font-family: Merriweather;
+    color: #090b6c;
+}
+
 .hamburguerMenu {
     display: none;
 }
@@ -174,7 +264,7 @@ body {
     display: none;
 }
 
-.centralizar {
+/* .centralizar {
     display: flex;
     justify-content: center;
     margin-top: 6%;
@@ -222,7 +312,7 @@ form {
     margin-top: 3%;
     gap: 20px;
     padding: 2%;
-}
+} */
 
 #img-adocly {
     width: 100%;

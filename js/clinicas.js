@@ -59,3 +59,27 @@ excluirConta.addEventListener('click', () => {
             })
     }
 })
+
+ const aluminio = document.getElementById('aluminio');
+
+ aluminio.addEventListener('click', function(){
+    document.getElementById('aluminioC').style.display = "grid"
+    document.getElementById('mairinqueC').style.display = "none"
+    document.getElementById('sorocabaC').style.display = "none"
+ })
+
+ const mairinque = document.getElementById('mairinque');
+
+ mairinque.addEventListener('click', function(){
+    document.getElementById('mairinqueC').style.display = "grid"
+    document.getElementById('aluminioC').style.display = "none"
+    document.getElementById('sorocabaC').style.display = "none"
+ })
+
+ const sorocaba = document.getElementById('sorocaba');
+
+ sorocaba.addEventListener('click', function(){
+    document.getElementById('sorocabaC').style.display = "grid"
+    document.getElementById('aluminioC').style.display = "none"
+    document.getElementById('mairinqueC').style.display = "none"
+ })
