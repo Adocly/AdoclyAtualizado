@@ -205,6 +205,7 @@ h1{
 
 .arrumandoAMS{
     display: none;
+    justify-content: center;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 480px;
     gap: 20px;
@@ -424,11 +425,18 @@ form {
         margin-left: 80px;
     }
 
-    body {
+    html{
         background-image: url(Tela\ verde.png);
         background-size: cover;
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
+    }
+
+    body{
+        background-image: url(Tela\ verde.png);
+        background-size: cover;
+        width: 100%;
+        height: 100%;
     }
 
     .navegacao {
@@ -467,24 +475,6 @@ form {
         display: none;
     }
 
-    #procurar {
-        font-size: 20px;
-    }
-
-    .card-endereco {
-        width: 90%;
-        height: -100%;
-    }
-
-    .googleMaps {
-        width: 90%;
-        height: 82%;
-    }
-
-    #googleMaps {
-        width: 100%;
-        height: 100%;
-    }
     #modalConta {
         width: 90%;
         height: 60%;
@@ -499,5 +489,24 @@ form {
         font-size: 15px;
         font-family: Merriweather;
         color: #9B6847;
+    }
+    h1 {
+        font-size: 16px;
+        text-align: center;
+    }
+    .btnAMS{
+        font-size: 12px;
+    }
+    .arrumandoAMS{
+        grid-template-columns: repeat(1, 0fr);
+        margin-top: 50px;
+        margin-left: 0;
+    }
+    .card{
+        width: 324px;
+        height: 450px;
+    }
+    .imgClinica{
+        height: 300px;
     }
 }
