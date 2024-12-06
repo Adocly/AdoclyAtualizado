@@ -44,6 +44,16 @@ document.getElementById('btnPerfilRespon').addEventListener('click', () => {
     }
 });
 
+function logout() {
+    firebase.auth().signOut().then(() => {
+      alert("Conta deslogada com sucesso!")
+      window.location.href = "../index.html"
+      history.replaceState(null, "", "../index.html")
+    }).catch(() => {
+      alert("Erro ao sair da conta.")
+    })
+  }
+
 const excluirConta = document.getElementById('excluirConta')
 
 excluirConta.addEventListener('click', () => {
