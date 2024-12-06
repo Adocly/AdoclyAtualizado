@@ -22,7 +22,7 @@
 
 Adoção: Caso o objetivo do usuário seja adotar um animal, ele entrará nessa página para fazer a adoção.<br> 
 
-Clínicas: Se o usuário decidir localizar uma clínica, ele entrará nessa página para visualizar as clínicas mais próximas do seu endereço de acordo com o mapa.<br>  
+Clínicas: Se o usuário decidir localizar uma clínica, ele entrará nessa página para visualizar as clínicas disponíveis na cidade de sua escolha.<br>  
 
 Avaliações: Caso o usuário queira deixar seu feedback sobre o site, ele entrará nessa página e adicionara seu nome, email e feedback nos 3 campos que solicitam determinadas informações.<br> 
 
