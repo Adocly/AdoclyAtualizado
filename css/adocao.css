@@ -559,6 +559,10 @@ h1 {
         display: flex;
     }
 
+    .info{
+        width: 80%;
+    }
+
     .info2 {
         font-size: 16px;
     }
