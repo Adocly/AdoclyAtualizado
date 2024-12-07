@@ -181,19 +181,23 @@ h3 {
     font-size: 25px;
     color: rgb(1, 143, 39);
 }
+.info{
+    width: 30%;
+    gap: 5px;
+}
 
 h1 {
     font-family: Merriweather;
     text-align: center;
     color: white;
-    background-color: #6AB1E4;
+    background-color: rgb(1, 143, 39);
     border-radius: 15px;
 }
 
 .info2 {
     font-family: Merriweather;
     font-size: 20px;
-    color: black;
+    color: rgb(1, 143, 39);
     margin-top: 3%;
 }
 
