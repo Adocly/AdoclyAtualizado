@@ -34,7 +34,7 @@ function logout() {
 
 const auth = firebase.auth();
 document.getElementById('btnPerfil').addEventListener('click', () => {
-    const user = firebase.auth().currentUser;
+    const user = auth.currentUser;
 
     if (user) {
         document.getElementById('emailConta').innerHTML = user.email;
@@ -45,7 +45,7 @@ document.getElementById('btnPerfil').addEventListener('click', () => {
 });
 
 document.getElementById('btnPerfilRespon').addEventListener('click', () => {
-    const user = firebase.auth().currentUser;
+    const user = auth.currentUser;
 
     if (user) {
         document.getElementById('emailConta').innerHTML = user.email;
@@ -58,9 +58,9 @@ document.getElementById('btnPerfilRespon').addEventListener('click', () => {
 const excluirConta = document.getElementById('excluirConta')
 
 excluirConta.addEventListener('click', () => {
-    const user1 = auth.currentUser;
-    if (user1) {
-        user1.delete()
+    const userToDelete = auth.currentUser;
+    if (userToDelete) {
+        userToDelete.delete()
             .then(() => {
                 alert("Conta excluída com sucesso.");
                 window.location.href = "../index.html"
