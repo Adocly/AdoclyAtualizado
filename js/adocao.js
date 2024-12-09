@@ -193,7 +193,7 @@ document.getElementById('btnPerfil').addEventListener('click', () => {
         document.getElementById('emailConta2').innerHTML = user.email;
     } else {
         document.getElementById('emailConta2').innerHTML =
-            'Erro: Nenhum usuário logado.';
+            'Erro: Nenhum usuário encontrado.';
     }
 });
 
@@ -204,7 +204,7 @@ document.getElementById('btnPerfilRespon').addEventListener('click', () => {
         document.getElementById('emailConta2').innerHTML = user.email;
     } else {
         document.getElementById('emailConta2').innerHTML =
-            'Erro: Nenhum usuário logado.';
+            'Erro: Nenhum usuário encontrado.';
     }
 });
 
